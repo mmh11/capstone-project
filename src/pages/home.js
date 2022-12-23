@@ -5,6 +5,7 @@ import Cube from '../components/cube';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { useBox } from "@react-three/cannon";
+import Card from "../components/cards";
 
 
 class Home extends Component {
@@ -18,12 +19,22 @@ class Home extends Component {
             fontSize: "7VW",
             margin: 0
         };
+        const secondTitleText = {
+            color: "#b135ff",
+            fontSize: "4VW",
+            margin: 0
+        };
         const typographyStyle = {
             marginLeft: "7VW",
             marginTop: "40VH",
         };
         const typographyStyle2 = {
             marginTop: "20VH",
+        };
+        const typographyStyle3 = {
+            marginTop: "40VH",
+            marginBottom: "20VH",
+            textAlign: "center"
         };
         const flexGrid = {
             display: "flex"
@@ -61,7 +72,12 @@ class Home extends Component {
                     </Typography>
                 </div>
                 <div>
-                    <Typography></Typography>
+                    <Typography style={typographyStyle3}>
+                        <h1 style={secondTitleText}>{t("home.intro_4")}</h1>
+                        <Grid>
+                            <Card/>
+                        </Grid>
+                    </Typography>
                 </div>
             </>
         )

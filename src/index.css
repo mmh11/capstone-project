@@ -4,7 +4,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*https://www.digitalocean.com/community/tutorials/css-scrollbars*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
 
+body::-webkit-scrollbar-track {
+  background: #b135ff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 3px solid #b135ff;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
