@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "home": "Home",
+        "about": "About",
+        "english": "英文",
+        "chinese": "中文"
+    },
+    "home": {
+        "intro_1": "Learn the blockchain basics in",
+        "intro_2": "BC Amateur.",
+        "intro_3": "BC Amateur is an online learning platform providing free tutorials for learning blockchain."
+    }
+}

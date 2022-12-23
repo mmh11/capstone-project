@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "home": "主頁",
+        "about": "關於",
+        "english": "ENG",
+        "chinese": "TCN"
+    },
+    "home": {
+        "intro_1": "在這裡認識區塊鏈基礎",
+        "intro_2": "BC Amateur.",
+        "intro_3": "BC Amateur 是一個網上學習平台，提供學習區塊鏈所需的免費內容。"
+    }
+}
