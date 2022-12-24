@@ -3,12 +3,19 @@
         "home": "主頁",
         "about": "關於",
         "english": "ENG",
-        "chinese": "TCN"
+        "chinese": "TCN",
+        "beginner": "初學者",
+        "advanced": "進階",
+        "quiz": "測驗",
+        "start": "開始"
     },
     "home": {
         "intro_1": "在這裡認識區塊鏈基礎",
         "intro_2": "BC Amateur.",
         "intro_3": "BC Amateur 是一個網上學習平台，提供學習區塊鏈所需的免費內容。",
-        "intro_4": "選擇課程"
+        "intro_4": "選擇課程",
+        "description_1": "區塊鏈簡介",
+        "description_2": "以比特幣區塊鏈的例子，學習區塊鏈技術背後的核心原理",
+        "description_3": "以測驗測試你對區塊鏈的認知"
     }
 }

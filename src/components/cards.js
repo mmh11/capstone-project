@@ -8,8 +8,10 @@ import Typography from '@mui/material/Typography';
 import ImageBeginner from '../materials/images/1.jpg'
 import ImageAdvance from '../materials/images/2.jpg'
 import ImageTest from '../materials/images/3.jpg'
+import { useTranslation } from 'react-i18next';
 
 export default function MediaCard() {
+  const { t, i18n } = useTranslation();
   const cardStyle = {
     marginTop: "10VH",
     marginLeft: "1VW",
@@ -21,60 +23,66 @@ export default function MediaCard() {
   }
   return (
     <div style={divStyle}>
-      <Card sx={{ maxWidth: "20VW" }} style={cardStyle}>
+      <Card sx={{ maxWidth: "20VW", minWidth:"20VW" }} style={cardStyle}>
         <CardMedia
           sx={{ height: "30VH" }}
           image={ImageBeginner}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
-            Beginner
+            {t("labels.beginner")}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            <br/>
+            {t("home.description_1")}
+            <br/>
+            <br/>
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Start</Button>
+          <Button size="small">{t("labels.start")}</Button>
         </CardActions>
       </Card>
 
-      <Card sx={{ maxWidth: "20VW" }} style={cardStyle}>
+      <Card sx={{ maxWidth: "20VW", minWidth:"20VW" }} style={cardStyle}>
         <CardMedia
           sx={{ height: "30VH" }}
           image={ImageAdvance}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
-            Advanced
+            {t("labels.advanced")}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            <br/>
+            {t("home.description_2")}
+            <br/>
+            {i18n.language === "TC" && <br/>}
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Start</Button>
+          <Button size="small">{t("labels.start")}</Button>
         </CardActions>
       </Card>
 
-      <Card sx={{ maxWidth: "20VW" }} style={cardStyle}>
+      <Card sx={{ maxWidth: "20VW", minWidth:"20VW" }} style={cardStyle}>
         <CardMedia
           sx={{ height: "30VH" }}
           image={ImageTest}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
-            Quiz
+            {t("labels.quiz")}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            <br/>
+            {t("home.description_3")}
+            <br/>
+            <br/>
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Start</Button>
+          <Button size="small">{t("labels.start")}</Button>
         </CardActions>
       </Card>
     </div>

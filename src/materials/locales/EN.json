@@ -3,12 +3,19 @@
         "home": "Home",
         "about": "About",
         "english": "英文",
-        "chinese": "中文"
+        "chinese": "中文",
+        "beginner": "Beginner",
+        "advanced": "Advanced",
+        "quiz": "Quiz",
+        "start": "Start"
     },
     "home": {
         "intro_1": "Learn the blockchain basics in",
         "intro_2": "BC Amateur.",
         "intro_3": "BC Amateur is an online learning platform providing free tutorials for learning blockchain.",
-        "intro_4": "Select tutorial"
+        "intro_4": "Select tutorial",
+        "description_1": "Introducing the blockchain.",
+        "description_2": "Learning rationale behind of the blockchain technology with typical Bitcoin-like blockchain example.",
+        "description_3": "Challenge yourself with a short quiz."
     }
 }
