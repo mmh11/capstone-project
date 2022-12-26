@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Selector extends Component {
+export default class beginner extends Component {
   render() {
     return (
-      <div>selector</div>
+      <div>beginner</div>
     )
   }
 }

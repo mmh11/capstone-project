@@ -9,8 +9,11 @@ import ImageBeginner from '../materials/images/1.jpg'
 import ImageAdvance from '../materials/images/2.jpg'
 import ImageTest from '../materials/images/3.jpg'
 import { useTranslation } from 'react-i18next';
+import {Link} from 'react-router-dom';
+import Beginner from '../pages/beginner';
+import Selector from './selector';
 
-export default function MediaCard() {
+export default function Cards() {
   	const { t, i18n } = useTranslation();
   	const cardStyle = {
     	marginTop: "10VH",
@@ -25,6 +28,12 @@ export default function MediaCard() {
 		display:"flex",
 		justifyContent:"center"
 	}
+	const muiButtonStyle = {
+		color: "#b135ff"
+	}
+	const muiButtonSX = {
+        "&:hover": {backgroundColor: "transparent",textDecoration: "underline" }
+    };
 	return (
 		<div style={divStyle}>
 		<Card style={cardStyle}>
@@ -44,7 +53,9 @@ export default function MediaCard() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button size="small">{t("labels.start")}</Button>
+				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+					<h3>{t("labels.start")}</h3>
+				</Button>
 			</CardActions>
 		</Card>
 
@@ -65,7 +76,9 @@ export default function MediaCard() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button size="small">{t("labels.start")}</Button>
+				<Button component={Link} to="/advanced" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+					<h3>{t("labels.start")}</h3>
+				</Button>
 			</CardActions>
 		</Card>
 
@@ -86,7 +99,9 @@ export default function MediaCard() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button size="small">{t("labels.start")}</Button>
+				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+					<h3>{t("labels.start")}</h3>
+				</Button>
 			</CardActions>
 		</Card>
 		</div>

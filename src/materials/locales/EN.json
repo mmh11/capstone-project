@@ -7,7 +7,8 @@
         "beginner": "Beginner",
         "advanced": "Advanced",
         "quiz": "Quiz",
-        "start": "Start"
+        "start": "Start",
+        "tutorial": "Tutorial List."
     },
     "home": {
         "intro_1": "Learn the blockchain basics in",
@@ -17,5 +18,26 @@
         "description_1": "Introducing the blockchain.",
         "description_2": "Learning rationale behind of the blockchain technology with typical Bitcoin-like blockchain example.",
         "description_3": "Challenge yourself with a short quiz."
+    },
+    "tutorial_1": {
+        "title": "1. Hash Value & Function"
+    },
+    "tutorial_2": {
+        "title": "2. Blockchain Basic Structure"
+    },
+    "tutorial_3": {
+        "title": "3. Block Generation & Mining"
+    },
+    "tutorial_4": {
+        "title": "4. Blockchain Transation"
+    },
+    "tutorial_5": {
+        "title": "5. Merkle Tree"
+    },
+    "tutorial_6": {
+        "title": "6. Double Spending Problem"
+    },
+    "tutorial_7": {
+        "title": "7. 51% Attack Problem"
     }
 }

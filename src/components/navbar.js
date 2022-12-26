@@ -3,7 +3,6 @@ import Logo from "../materials/images/Logo.png"
 import { AppBar, Button, Toolbar, Grid} from '@mui/material'
 import {Link} from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-import costomUseScroll from './costomUseScroll';
 
 class Navbar extends Component {
   render() {
@@ -33,7 +32,7 @@ class Navbar extends Component {
         whiteSpace: "nowrap"
     }
     return (
-        <AppBar position="fixed" style={appbarStyle}>
+        <AppBar position="static" style={appbarStyle}>
             <Toolbar sx={{ justifyContent: "space-between" }}>
                 <Button component={Link} to="/" sx={muiButtonSX} disableRipple style={buttonStyle}>
                     <img src={Logo} alt="" style={imageStyle}></img>

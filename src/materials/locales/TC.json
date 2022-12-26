@@ -7,15 +7,37 @@
         "beginner": "初學者",
         "advanced": "進階",
         "quiz": "測驗",
-        "start": "開始"
+        "start": "開始",
+        "tutorial": "教程列表"
     },
     "home": {
         "intro_1": "在這裡認識區塊鏈基礎",
         "intro_2": "BC Amateur.",
         "intro_3": "BC Amateur 是一個網上學習平台，提供學習區塊鏈所需的免費內容。",
-        "intro_4": "選擇課程",
+        "intro_4": "選擇教程。",
         "description_1": "區塊鏈簡介",
         "description_2": "以比特幣區塊鏈的例子，學習區塊鏈技術背後的核心原理",
         "description_3": "測試你對區塊鏈的認知"
+    },
+    "tutorial_1": {
+        "title": "1. 雜湊值與雜湊函數"
+    },
+    "tutorial_2": {
+        "title": "2. 區塊鏈基本結構"
+    },
+    "tutorial_3": {
+        "title": "3. 區塊生成與采掘"
+    },
+    "tutorial_4": {
+        "title": "4. 區塊鏈交易"
+    },
+    "tutorial_5": {
+        "title": "5. 雜湊樹"
+    },
+    "tutorial_6": {
+        "title": "6. 雙重支付問題"
+    },
+    "tutorial_7": {
+        "title": "7. 51%攻擊問題"
     }
 }
