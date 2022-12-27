@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 export default function Tut_6() {
     const { t, i18n } = useTranslation();
@@ -8,13 +9,24 @@ export default function Tut_6() {
         fontSize: "3VW",
         marginTop: "5VH",
     };
+    const subTitleText = {
+        color: "white",
+    }
+    const paragraphText = {
+        color: "#cccccc",
+        marginBottom: "5VH"
+    }
     return (
         <>
-            <div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                >
                 <h1 style={titleText}>
                     {t("tutorial_6.title")}
                 </h1>
-            </div>
+            </motion.div>
         </>
     )
 }
