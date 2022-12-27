@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 
-export default function Tut_2() {
+export default function Tut_5() {
     const { t, i18n } = useTranslation();
     const titleText = {
         color: "white",
@@ -12,7 +12,7 @@ export default function Tut_2() {
         <>
             <div>
                 <h1 style={titleText}>
-                    {t("tutorial_2.title")}
+                    {t("tutorial_5.title")}
                 </h1>
             </div>
         </>

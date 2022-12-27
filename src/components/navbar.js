@@ -44,6 +44,9 @@ class Navbar extends Component {
                     <Button component={Link} to="/" sx={muiButtonSX} disableRipple style={textButtonStyle}>
                         <h3>{t("labels.home")}</h3>
                     </Button>
+                    <Button component={Link} to="/advanced" sx={muiButtonSX} disableRipple style={textButtonStyle}>
+                        <h3>{t("labels.advanced")}</h3>
+                    </Button>
                     <Button component={Link} to="/about" sx={muiButtonSX} disableRipple style={textButtonStyle}>
                         <h3>{t("labels.about")}</h3>
                     </Button>
@@ -71,3 +74,4 @@ class Navbar extends Component {
 }
 
 export default withTranslation()(Navbar);
+// import { useLocation } from 'react-router-dom'; const currentPath = useLocation().pathname; ---> check path

@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
-import { Button, TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Grid } from '@mui/material'
+import React from 'react'
+import { Button, TableContainer, Table, TableHead, TableBody, TableRow, TableCell } from '@mui/material'
 import { useTranslation } from 'react-i18next';
-import {Link, useLocation} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTutorial } from '../Redux/switcher';
 
 export default function Selector() {
     const { t, i18n } = useTranslation();
-    const currentPath = useLocation().pathname;
     const currentTutorial = useSelector((state) => state.counter.value)
     const dispatch = useDispatch();
     const divSpliterStyle = {
@@ -40,6 +38,9 @@ export default function Selector() {
         borderBottom: "none",
         paddingTop: 0
     };
+    const currentMuiButtonSX = {
+        "&:hover": {backgroundColor: "transparent"}
+    };
     const muiButtonSX = {
         "&:hover": {backgroundColor: "#b135ff"}
     };
@@ -62,14 +63,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==1) && muiButtonSX} 
+                                    sx={(currentTutorial!==1)
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle} 
                                     onClick={() => dispatch(setTutorial(1))} // Tutorial 1
                                     disableRipple
                                     >
                                     <h4 style={(currentTutorial===1)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_1.title")}
                                     </h4>
@@ -79,14 +82,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==2) && muiButtonSX} 
+                                    sx={(currentTutorial!==2) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle} 
                                     onClick={() => dispatch(setTutorial(2))} // Tutorial 2
                                     disableRipple
                                     >
                                     <h4 style={(currentTutorial===2)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_2.title")}
                                     </h4>
@@ -96,14 +101,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==3) && muiButtonSX} 
+                                    sx={(currentTutorial!==3) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(3))} // Tutorial 3
                                     disableRipple
                                     >
                                     <h4 style={(currentTutorial===3)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_3.title")}
                                     </h4>
@@ -113,14 +120,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==4) && muiButtonSX} 
+                                    sx={(currentTutorial!==4) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(4))} // Tutorial 4
                                     disableRipple
                                     >
                                     <h4 style={(currentTutorial===4)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_4.title")}
                                     </h4>
@@ -130,14 +139,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==5) && muiButtonSX} 
+                                    sx={(currentTutorial!==5) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(5))} // Tutorial 5
                                     disableRipple
                                     >
                                     <h4 style={(currentTutorial===5)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_5.title")}
                                     </h4>
@@ -147,14 +158,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==6) && muiButtonSX} 
+                                    sx={(currentTutorial!==6) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(6))} // Tutorial 6
                                     disableRipple
                                 >
                                     <h4 style={(currentTutorial===6)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_6.title")}
                                     </h4>
@@ -164,14 +177,16 @@ export default function Selector() {
                         <TableRow>
                             <TableCell style={tableCellStyle}>
                                 <Button 
-                                    sx={(currentTutorial!==7) && muiButtonSX} 
+                                    sx={(currentTutorial!==7) 
+                                        ? muiButtonSX
+                                        : currentMuiButtonSX}
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(7))} // Tutorial 7
                                     disableRipple
                                 >
                                     <h4 style={(currentTutorial===7)
-                                        ?currenth4Style
-                                        :h4Style}
+                                        ? currenth4Style
+                                        : h4Style}
                                         >
                                         {t("tutorial_7.title")}
                                     </h4>

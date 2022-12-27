@@ -1,7 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-export default function Tut_1() {
+export default function Tut_3() {
+    const { t, i18n } = useTranslation();
+    const titleText = {
+        color: "white",
+        fontSize: "3VW",
+        marginTop: "5VH",
+    };
     return (
-      <div>tut_3</div>
+        <>
+            <div>
+                <h1 style={titleText}>
+                    {t("tutorial_3.title")}
+                </h1>
+            </div>
+        </>
     )
 }
