@@ -65,6 +65,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==1) && muiButtonSX} 
                                     style={muiButtonStyle} 
                                     onClick={() => dispatch(setTutorial(1))} // Tutorial 1
+                                    disableRipple
                                     >
                                     <h4 style={(currentTutorial===1)
                                         ?currenth4Style
@@ -81,6 +82,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==2) && muiButtonSX} 
                                     style={muiButtonStyle} 
                                     onClick={() => dispatch(setTutorial(2))} // Tutorial 2
+                                    disableRipple
                                     >
                                     <h4 style={(currentTutorial===2)
                                         ?currenth4Style
@@ -97,6 +99,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==3) && muiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(3))} // Tutorial 3
+                                    disableRipple
                                     >
                                     <h4 style={(currentTutorial===3)
                                         ?currenth4Style
@@ -113,6 +116,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==4) && muiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(4))} // Tutorial 4
+                                    disableRipple
                                     >
                                     <h4 style={(currentTutorial===4)
                                         ?currenth4Style
@@ -129,6 +133,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==5) && muiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(5))} // Tutorial 5
+                                    disableRipple
                                     >
                                     <h4 style={(currentTutorial===5)
                                         ?currenth4Style
@@ -145,6 +150,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==6) && muiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(6))} // Tutorial 6
+                                    disableRipple
                                 >
                                     <h4 style={(currentTutorial===6)
                                         ?currenth4Style
@@ -161,6 +167,7 @@ export default function Selector() {
                                     sx={(currentTutorial!==7) && muiButtonSX} 
                                     style={muiButtonStyle}
                                     onClick={() => dispatch(setTutorial(7))} // Tutorial 7
+                                    disableRipple
                                 >
                                     <h4 style={(currentTutorial===7)
                                         ?currenth4Style

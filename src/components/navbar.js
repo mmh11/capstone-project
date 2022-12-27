@@ -16,7 +16,10 @@ class Navbar extends Component {
         marginLeft:"5VW",
     };
     const muiButtonSX = {
-        "&:hover": {backgroundColor: "transparent",textDecoration: "underline" }
+        "&:hover": { 
+            backgroundColor: "transparent",
+            textDecoration: "underline"
+        }
     };
     const textButtonStyle = {
         maxWidth:"450px",

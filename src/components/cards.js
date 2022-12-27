@@ -19,7 +19,8 @@ export default function Cards() {
     	marginTop: "10VH",
     	marginLeft: "1VW",
     	marginRight: "1VW",
-    	maxWidth: "20VW", minWidth:"20VW"
+    	maxWidth: "20VW",
+		minWidth:"20VW"
   	}
 	const cardMediaStyle = {
 		height: "30VH"
