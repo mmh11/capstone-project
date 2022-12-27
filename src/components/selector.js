@@ -18,7 +18,7 @@ export default function Selector() {
         height: "20VH"
     }
     const h4Style = {
-        color: "#b3b3b3",
+        color: "#cccccc",
         margin: 0,
         fontSize: "0.7VW"
     };
