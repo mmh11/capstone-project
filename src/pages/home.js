@@ -4,7 +4,6 @@ import { withTranslation } from 'react-i18next';
 import Cube from '../components/cube';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { useBox } from "@react-three/cannon";
 import { MotionValue, motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Card from "../components/cards";
 

@@ -21,12 +21,12 @@ function App() {
         <>
             <ThemeProvider theme={theme}>
                 <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/beginner" element={<Beginner/>}/>
-                    <Route path="/advanced" element={<Advanced/>}/>
-                </Routes>
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/beginner" element={<Beginner/>}/>
+                        <Route path="/advanced" element={<Advanced/>}/>
+                    </Routes>
             </ThemeProvider>
         </>
     );

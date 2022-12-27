@@ -26,7 +26,6 @@ export default function Selector() {
         color: "#b135ff",
         margin: 0,
         fontSize: "0.7VW",
-        textDecoration: "underline"
     };
     const titleText = {
         marginTop: "5VH",
