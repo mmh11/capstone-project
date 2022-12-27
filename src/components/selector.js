@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
-import { TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Grid } from '@mui/material'
+import { Button, TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Grid } from '@mui/material'
 import { useTranslation } from 'react-i18next';
 import {Link, useLocation} from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setTutorial } from '../Redux/switcher';
 
-export default function Selector() {//component={Link} to="/beginner"
+export default function Selector() {
     const { t, i18n } = useTranslation();
     const currentPath = useLocation().pathname;
+    const currentTutorial = useSelector((state) => state.counter.value)
+    const dispatch = useDispatch();
     const divSpliterStyle = {
         display:"flex", 
         justifyContent: "space-between",
@@ -20,17 +24,29 @@ export default function Selector() {//component={Link} to="/beginner"
         margin: 0,
         fontSize: "0.7VW"
     };
+    const currenth4Style = {
+        color: "#b135ff",
+        margin: 0,
+        fontSize: "0.7VW",
+        textDecoration: "underline"
+    };
     const titleText = {
         marginTop: "5VH",
-        marginLeft: "1VW",
+        marginLeft: "1.5VW",
         color: "#b135ff",
         fontSize: "1.5VW",
     };
     const tableCellStyle = {
         borderBottom: "none",
+        paddingTop: 0
     };
-    const tableRowStyle = {
-        marginLeft: "5VW",
+    const muiButtonSX = {
+        "&:hover": {backgroundColor: "#b135ff"}
+    };
+    const muiButtonStyle = {
+        width: "100%",
+        justifyContent: "start",
+        textAlign: "start"
     }
     return (
     <>
@@ -45,37 +61,114 @@ export default function Selector() {//component={Link} to="/beginner"
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_1.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==1) && muiButtonSX} 
+                                    style={muiButtonStyle} 
+                                    onClick={() => dispatch(setTutorial(1))} // Tutorial 1
+                                    >
+                                    <h4 style={(currentTutorial===1)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_1.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_2.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==2) && muiButtonSX} 
+                                    style={muiButtonStyle} 
+                                    onClick={() => dispatch(setTutorial(2))} // Tutorial 2
+                                    >
+                                    <h4 style={(currentTutorial===2)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_2.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_3.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==3) && muiButtonSX} 
+                                    style={muiButtonStyle}
+                                    onClick={() => dispatch(setTutorial(3))} // Tutorial 3
+                                    >
+                                    <h4 style={(currentTutorial===3)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_3.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_4.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==4) && muiButtonSX} 
+                                    style={muiButtonStyle}
+                                    onClick={() => dispatch(setTutorial(4))} // Tutorial 4
+                                    >
+                                    <h4 style={(currentTutorial===4)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_4.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_5.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==5) && muiButtonSX} 
+                                    style={muiButtonStyle}
+                                    onClick={() => dispatch(setTutorial(5))} // Tutorial 5
+                                    >
+                                    <h4 style={(currentTutorial===5)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_5.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_6.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==6) && muiButtonSX} 
+                                    style={muiButtonStyle}
+                                    onClick={() => dispatch(setTutorial(6))} // Tutorial 6
+                                >
+                                    <h4 style={(currentTutorial===6)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_6.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell style={tableCellStyle}>
-                                <h4 style={h4Style}>{t("tutorial_7.title")}</h4>
+                                <Button 
+                                    sx={(currentTutorial!==7) && muiButtonSX} 
+                                    style={muiButtonStyle}
+                                    onClick={() => dispatch(setTutorial(7))} // Tutorial 7
+                                >
+                                    <h4 style={(currentTutorial===7)
+                                        ?currenth4Style
+                                        :h4Style}
+                                        >
+                                        {t("tutorial_7.title")}
+                                    </h4>
+                                </Button>
                             </TableCell>
                         </TableRow>
                     </TableBody>

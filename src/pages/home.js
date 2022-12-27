@@ -5,8 +5,8 @@ import Cube from '../components/cube';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { useBox } from "@react-three/cannon";
+import { MotionValue, motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Card from "../components/cards";
-
 
 class Home extends Component {
     render() {
@@ -43,6 +43,13 @@ class Home extends Component {
             width: "50VW",
             height: "50VH"
         }
+        const cameraStyle = {
+            fov: 35, 
+            zoom: 1.3,
+            near: 1, 
+            far: 1000, 
+            position: [2.5,2,2.3]
+        }
         const divStyle={
             display:"flex", 
             justifyContent: "space-between"
@@ -62,7 +69,7 @@ class Home extends Component {
                         </Grid>
                     </Typography>
                     <Typography style={typographyStyle2}>
-                        <Canvas style={canvasStyle} camera={{ fov: 35, zoom: 1.3, near: 1, far: 1000, position:[2.5,2,2.3] }}>
+                        <Canvas style={canvasStyle} camera={cameraStyle}>
                             <OrbitControls enableZoom={false} autoRotate={true}/>
                             <PerspectiveCamera/>
                             <ambientLight intensity={0.5}/>

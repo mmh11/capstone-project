@@ -6,6 +6,9 @@ export default function Advanced() {
         display:"flex", 
         justifyContent: "space-between",
     }
+    const whiteText = {
+        color: "white"
+    }
     return (
         <>
             <div style={divSpliterStyle}>
@@ -13,7 +16,7 @@ export default function Advanced() {
                     <Selector/>
                 </div>
                 <div style={{width:"80%"}}>
-                    <h1>test</h1>
+                    <h1 style={whiteText}>test</h1>
                 </div>
             </div>
         </>
