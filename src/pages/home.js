@@ -55,7 +55,17 @@ export default function Home() {
     }
     return (
         <>
-            <div style={divStyle}>
+            <motion.circle
+  initial={{ pathLength: 0 }}
+  animate={{ pathLength: 1 }}
+/>
+            <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ delay: 1 }}
+                style={divStyle}
+                >
                 <Typography style={typographyStyle}>
                     <Grid>
                         <h2 style={whiteText}>{t("home.intro_1")}</h2>
@@ -76,7 +86,7 @@ export default function Home() {
                         <Cube/>
                     </Canvas>
                 </Typography>
-            </div>
+            </motion.div>
             <div>
                 <Typography style={typographyStyle3}>
                     <h1 style={secondTitleText}>{t("home.intro_4")}</h1>
