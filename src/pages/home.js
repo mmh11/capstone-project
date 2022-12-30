@@ -55,10 +55,6 @@ export default function Home() {
     }
     return (
         <>
-            <motion.circle
-  initial={{ pathLength: 0 }}
-  animate={{ pathLength: 1 }}
-/>
             <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
