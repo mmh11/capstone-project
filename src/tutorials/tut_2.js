@@ -35,11 +35,11 @@ export default function Tut_2() {
                 <h1 style={titleText}>
                     {t("tutorial_2.title")}
                 </h1>
-                <Paper style={paperStyle} elevation={24} square={false}>
                 <div>
-                    <DragStructure/>
+                    <Paper style={paperStyle} elevation={24} square={false}>
+                        <DragStructure/>
+                    </Paper>
                 </div>
-                </Paper>
             </motion.div>
         </>
     )
