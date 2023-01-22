@@ -35,7 +35,12 @@
         "hash_value": "The hash value of your input is: "
     },
     "tutorial_2": {
-        "title": "2. Blockchain Basic Structure"
+        "title": "2. Blockchain Basic Structure",
+        "header_1": "Nonce",
+        "header_2": "Difficulty",
+        "header_3": "Version",
+        "header_4": "Merkle Tree",
+        "header_5": "Block Size"
     },
     "tutorial_3": {
         "title": "3. Block Generation & Mining"
