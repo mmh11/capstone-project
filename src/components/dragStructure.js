@@ -15,12 +15,15 @@ export default function DragStructure() {
         bounceStiffness: 500, 
         bounceDamping: 100
     }
-    const [X_1, setX_1] = useState(0)
-    const [X_2, setX_2] = useState(0)
-    const [X_3, setX_3] = useState(0)
     const [Y_1, setY_1] = useState(0)
     const [Y_2, setY_2] = useState(0)
     const [Y_3, setY_3] = useState(0)
+    const [Y_4, setY_4] = useState(0)
+    const [Y_5, setY_5] = useState(0)
+    const [checkCorrect, setCheckCorrect] = useState(false)
+    const checkY = (yValue_1, yValue_2, yValue_3, yValue_4, yValue_5)=> {
+        setCheckCorrect(yValue_1<350 && yValue_2<350 && yValue_3<350 && yValue_4<350 && yValue_5<350)
+    }
     return (
         <>
             <motion.div
@@ -28,7 +31,7 @@ export default function DragStructure() {
                 drag
                 dragConstraints={{
                     top: 0,
-                    right: 700,
+                    right: 800,
                     bottom: 440,
                     left: 0,
                 }}
@@ -37,8 +40,8 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setX_1(Math.round(e.x))
                     setY_1(Math.round(e.y))
+                    checkY(Y_1,Y_2,Y_3,Y_4,Y_5)
                 }}
             >
                 <h3 style={{
@@ -54,16 +57,17 @@ export default function DragStructure() {
                 drag
                 dragConstraints={{
                     top: -60,
-                    right: 700,
+                    right: 800,
                     bottom: 380,
                     left: 0,
                 }}
                 dragTransition={dragTransitionStyle}
                 dragElastic={0.2}
+                dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setX_2(Math.round(e.x))
                     setY_2(Math.round(e.y))
+                    checkY(Y_1,Y_2,Y_3,Y_4,Y_5)
                 }}
             >
                 <h3 style={{
@@ -79,16 +83,17 @@ export default function DragStructure() {
                 drag
                 dragConstraints={{
                     top: -120,
-                    right: 700,
+                    right: 800,
                     bottom: 320,
                     left: 0,
                 }}
                 dragTransition={dragTransitionStyle}
                 dragElastic={0.2}
+                dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setX_3(Math.round(e.x))
                     setY_3(Math.round(e.y))
+                    checkY(Y_1,Y_2,Y_3,Y_4,Y_5)
                 }}
             >
                 <h3 style={{
@@ -104,13 +109,18 @@ export default function DragStructure() {
                 drag
                 dragConstraints={{
                     top: -180,
-                    right: 700,
+                    right: 800,
                     bottom: 260,
                     left: 0,
                 }}
                 dragTransition={dragTransitionStyle}
                 dragElastic={0.2}
+                dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
+                onDrag={(e) => {
+                    setY_4(Math.round(e.y))
+                    checkY(Y_1,Y_2,Y_3,Y_4,Y_5)
+                }}
             >
                 <h3 style={{
                     textAlign: "center",
@@ -125,13 +135,18 @@ export default function DragStructure() {
                 drag
                 dragConstraints={{
                     top: -240,
-                    right: 700,
+                    right: 800,
                     bottom: 200,
                     left: 0,
                 }}
                 dragTransition={dragTransitionStyle}
                 dragElastic={0.2}
+                dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
+                onDrag={(e) => {
+                    setY_5(Math.round(e.y))
+                    checkY(Y_1,Y_2,Y_3,Y_4,Y_5)
+                }}
             >
                 <h3 style={{
                     textAlign: "center",
@@ -141,9 +156,10 @@ export default function DragStructure() {
                     {t("tutorial_2.header_5")}
                 </h3>
             </motion.div>
-            <p style={{color:"white"}}>{X_1}{"||"}{Y_1}</p>
-            <p style={{color:"white"}}>{X_2}{"||"}{Y_2}</p>
-            <p style={{color:"white"}}>{X_3}{"||"}{Y_3}</p>
+            {checkCorrect 
+                ? <h1 style={{color:"green"}}>Correct!</h1>
+                : <h1 style={{color:"red"}}>Incorrect!</h1>
+            }
         </>
     )
 }

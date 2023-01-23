@@ -22,7 +22,7 @@ export default function Tut_2() {
         backgroundColor: "#262626",
         marginBottom: "5VH",
         marginLeft: "1VW",
-        width: "900px",
+        width: "1000px",
         height: "500px"
     };
     return (
