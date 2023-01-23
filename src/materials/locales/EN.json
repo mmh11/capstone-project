@@ -40,7 +40,8 @@
         "header_2": "Difficulty",
         "header_3": "Version",
         "header_4": "Merkle Tree",
-        "header_5": "Block Size"
+        "header_5": "Block Size",
+        "correct": "Correct!"
     },
     "tutorial_3": {
         "title": "3. Block Generation & Mining"

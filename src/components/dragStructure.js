@@ -15,11 +15,15 @@ export default function DragStructure() {
         bounceStiffness: 500, 
         bounceDamping: 100
     }
+    const correctTextStyle = {
+        color: "green",
+        textAlign: "center"
+    }
     const [Y_1, setY_1] = useState(0)
-    const [Y_2, setY_2] = useState(0)
-    const [Y_3, setY_3] = useState(0)
-    const [Y_4, setY_4] = useState(0)
-    const [Y_5, setY_5] = useState(0)
+    const [Y_2, setY_2] = useState(300)
+    const [Y_3, setY_3] = useState(600)
+    const [Y_4, setY_4] = useState(900)
+    const [Y_5, setY_5] = useState(1200)
     const [checkCorrect, setCheckCorrect] = useState(false)
     const checkY = (yValue_1, yValue_2, yValue_3, yValue_4, yValue_5)=> {
         setCheckCorrect(yValue_1<350 && yValue_2<350 && yValue_3<350 && yValue_4<350 && yValue_5<350)
@@ -156,10 +160,7 @@ export default function DragStructure() {
                     {t("tutorial_2.header_5")}
                 </h3>
             </motion.div>
-            {checkCorrect 
-                ? <h1 style={{color:"green"}}>Correct!</h1>
-                : <h1 style={{color:"red"}}>Incorrect!</h1>
-            }
+            {checkCorrect && <h1 style={correctTextStyle}>{t("tutorial_2.correct")}</h1>}
         </>
     )
 }
