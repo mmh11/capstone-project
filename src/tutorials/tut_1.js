@@ -21,6 +21,7 @@ export default function Tut_1() {
     };
     const paragraphTextNoMargin = {
         color: "#cccccc",
+        lineHeight: 2
     };
     const purpleText = {
         color: "#b135ff"
@@ -39,6 +40,7 @@ export default function Tut_1() {
     const paperDivStyle = {
         marginLeft: "50px",
     }
+    const paraSpace = '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'
     const [textField_1, setTextField_1] = useState('')
     return (
         <>
@@ -86,6 +88,10 @@ export default function Tut_1() {
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_2_4")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {paraSpace}
+                    {t("tutorial_1.paragraph_2_4_1")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_2_5")}
