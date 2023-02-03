@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Paper from '@mui/material/Paper';
 import CustomTextField from '../components/customTextField';
 import Hash from '../components/crytoFunctions';
+import blockAndChain from '../materials/images/blockAndChain.png'
 
 export default function Tut_1() {
     const { t, i18n } = useTranslation();
@@ -20,7 +21,9 @@ export default function Tut_1() {
         marginBottom: "5VH"
     };
     const paragraphTextNoMargin = {
+        textAlign: "justify",
         color: "#cccccc",
+        marginRight: "20%",
         lineHeight: 2
     };
     const purpleText = {
@@ -40,7 +43,6 @@ export default function Tut_1() {
     const paperDivStyle = {
         marginLeft: "50px",
     }
-    const paraSpace = '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'
     const [textField_1, setTextField_1] = useState('')
     return (
         <>
@@ -90,20 +92,50 @@ export default function Tut_1() {
                     {t("tutorial_1.paragraph_2_4")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
-                    {paraSpace}
                     {t("tutorial_1.paragraph_2_4_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_2_5")}
                 </h3>
-                <h3 style={paragraphText}>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_2_5_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_2_6")}
                 </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_2_6_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_2_7")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_2_7_1")}
+                </h3>
+                <br/>
                 <h2 style={subTitleText}>
                     {t("tutorial_1.subTitle_3")}
                 </h2>
                 <h3 style={paragraphText}>
                     {t("tutorial_1.paragraph_3_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_3_2")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_3_2_1")}
+                </h3>
+                <img src={blockAndChain} />
+                <br/>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_3_3")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_1.paragraph_3_3_1")}
                 </h3>
             </motion.div>
         </>
