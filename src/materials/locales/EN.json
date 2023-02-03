@@ -19,7 +19,7 @@
         "description_2": "Learning rationale behind of the blockchain technology with typical Bitcoin-like blockchain example.",
         "description_3": "Challenge yourself with a short quiz."
     },
-    "tutorial_1": {
+    "tutorial_1": { 
         "title": "1. Hash Value & Function",
         "subTitle_1": "1.1 TL;DR",
         "subTitle_2": "1.2 Properties",
