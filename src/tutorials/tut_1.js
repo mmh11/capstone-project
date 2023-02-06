@@ -43,6 +43,10 @@ export default function Tut_1() {
     const paperDivStyle = {
         marginLeft: "50px",
     }
+    const imgDivStyle = {
+        marginLeft: "5%",
+        marginTop: "5%"
+    }
     const [textField_1, setTextField_1] = useState('')
     //Bitcoin and Cryptocurrency Technologies : A Comprehensive Introduction
     //Introduction to Blockchain Gupta, Amit.  Chemical Engineering Progress; New York Vol. 116, Iss. 9,  (Sep 2020): 37-44.
@@ -130,7 +134,9 @@ export default function Tut_1() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_3_2_1")}
                 </h3>
-                <img src={blockAndChain} />
+                <div style={imgDivStyle}>
+                    <img src={blockAndChain} />
+                </div>
                 <br/>
                 <br/>
                 <h3 style={paragraphTextNoMargin}>
