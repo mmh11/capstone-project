@@ -8,7 +8,8 @@
         "advanced": "Major Tutorial",
         "quiz": "Quiz",
         "start": "Start",
-        "tutorial": "Tutorial List."
+        "tutorial": "Tutorial List.",
+        "textFieldLabel": "Input here..."
     },
     "home": {
         "intro_1": "Learn the blockchain basics in",
@@ -33,14 +34,13 @@
         "paragraph_2_5": "(2) Collision Resistance",
         "paragraph_2_5_1": "Hash function is resistance against collision, having two identical output values from a hash function like SHA-256 using different inputs is imposible to be found. Two different input will result in two different ouput.",
         "paragraph_2_6": "(3) Same input result in same output",
-        "paragraph_2_6_1": "Hash function will guarantee to generate the same output value with the same input value. For example, the hash value(SHA-256) of the word 'Hash' is 'a91069147f9bd9245cdacaef8ead4c3578ed44f179d7eb6bd4690e62ba4658f2'. The output value of a specific input is constant.",
+        "paragraph_2_6_1": "Hash function will guarantee to generate the same output value with the same input value. For example, the hash value(SHA-256) of the word 'Hash' is 'a91069147f9bd9245cdacaef8ead4c3578ed44f179d7eb6bd4690e62ba4658f2'. When using the same hash function, the output value of a specific input is constant.",
         "paragraph_2_7": "(4) Hiding",
         "paragraph_2_7_1": "Hash function will generate an output which does not contain any trail of the original input values, it is impossible to figure out the input value using the output hash value because a hash function does not generate value simply by replacing the alphabet.",
         "paragraph_3_1": "A Blockchain system applies Hash in different parts, the major parts are as follows.",
-        "paragraph_3_2": "(1) The Block and the Chain",
-        "paragraph_3_2_1": "To link blocks into a blockchain, hash plays the key role.",
+        "paragraph_3_2": "(1) Chaining the blocks",
         "paragraph_3_3": "(2) The Merkle Tree",
-        "paragraph_3_3_1": "",
+        "paragraph_3_4": "More will be explained in other chapters.",
         "hash_value": "The hash value of your input is: "
     },
     "tutorial_2": {

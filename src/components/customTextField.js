@@ -1,7 +1,9 @@
 import React from 'react'
 import TextField from "@mui/material/TextField";
+import { useTranslation } from 'react-i18next';
 
 const CustomTextField = ({...props}) => {
+    const { t, i18n } = useTranslation();
     const SXStyle = {
         "& .MuiInputBase-root": { //input text
             color: "#cccccc"
@@ -28,7 +30,7 @@ const CustomTextField = ({...props}) => {
         <TextField 
             sx={SXStyle}
             id="outlined-basic" 
-            label="Input here..." 
+            label={t("labels.textFieldLabel")}
             variant="outlined" 
             multiline="true"
             {...props}

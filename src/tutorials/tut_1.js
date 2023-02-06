@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Paper from '@mui/material/Paper';
 import CustomTextField from '../components/customTextField';
 import Hash from '../components/crytoFunctions';
-import blockAndChain from '../materials/images/blockAndChain.png'
 
 export default function Tut_1() {
     const { t, i18n } = useTranslation();
@@ -42,10 +41,6 @@ export default function Tut_1() {
     };
     const paperDivStyle = {
         marginLeft: "50px",
-    }
-    const imgDivStyle = {
-        marginLeft: "5%",
-        marginTop: "5%"
     }
     const [textField_1, setTextField_1] = useState('')
     //Bitcoin and Cryptocurrency Technologies : A Comprehensive Introduction
@@ -125,25 +120,17 @@ export default function Tut_1() {
                 <h2 style={subTitleText}>
                     {t("tutorial_1.subTitle_3")}
                 </h2>
-                <h3 style={paragraphText}>
+                <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_3_1")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_3_2")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("tutorial_1.paragraph_3_2_1")}
-                </h3>
-                <div style={imgDivStyle}>
-                    <img src={blockAndChain} />
-                </div>
-                <br/>
-                <br/>
-                <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_1.paragraph_3_3")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("tutorial_1.paragraph_3_3_1")}
+                    {t("tutorial_1.paragraph_3_4")}
                 </h3>
             </motion.div>
         </>
