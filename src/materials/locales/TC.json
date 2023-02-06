@@ -44,7 +44,14 @@
         "hash_value": "輸入內容的哈希值為： "
     },
     "tutorial_2": {
-        "title": "2. 區塊鏈基本結構"
+        "title": "2. 區塊鏈基本結構",
+        "header_1": "隨機數",
+        "header_2": "難度",
+        "header_3": "版本",
+        "header_4": "哈希樹根",
+        "header_5": "時間戳記",
+        "header_6": "前哈希值",
+        "correct": "正確!"
     },
     "tutorial_3": {
         "title": "3. 區塊生成與采掘"
