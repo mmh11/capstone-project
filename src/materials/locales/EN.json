@@ -57,7 +57,21 @@
         "subTitle_2": "1.2 Block Header",
         "subTitle_3": "1.3 Block Body",
         "paragraph_1_1": "Blockchain is constructed by the header part and the body part. For the elements in the header, one example is that the Previous Block Hash in the header, it plays the key role to chain the data block into a blockchain.",
-        "paragraph_2_1": "Here is a single block with different elements, could you try to identify the correct elements in the header?"
+        "paragraph_2_1": "Here is a single block with different elements, could you try to identify the correct elements in the header?",
+        "paragraph_2_2": "Details of the block header elements.",
+        "paragraph_2_3": "",
+        "paragraph_2_3_1": "",
+        "paragraph_2_4": "",
+        "paragraph_2_4_1": "",
+        "paragraph_2_5": "",
+        "paragraph_2_5_1": "",
+        "paragraph_2_6": "",
+        "paragraph_2_6_1": "",
+        "paragraph_2_7": "",
+        "paragraph_2_7_1": "",
+        "paragraph_2_8": "",
+        "paragraph_2_8_1": "",
+        "paragraph_3_1": ""
     },
     "tutorial_3": {
         "title": "3. Block Generation & Mining"
