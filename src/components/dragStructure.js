@@ -19,6 +19,10 @@ export default function DragStructure() {
         color: "green",
         textAlign: "center"
     }
+    const incorrectTextStyle = {
+        color: "red",
+        textAlign: "center"
+    }
     const [Y_1, setY_1] = useState(0)
     const [Y_2, setY_2] = useState(300)
     const [Y_3, setY_3] = useState(600)
@@ -187,7 +191,10 @@ export default function DragStructure() {
                     {t("tutorial_2.header_6")}
                 </h3>
             </motion.div>
-            {checkCorrect && <h1 style={correctTextStyle}>{t("tutorial_2.correct")}</h1>}
+            {checkCorrect 
+                ? <h1 style={correctTextStyle}>{t("tutorial_2.correct")}</h1>
+                : <h1 style={incorrectTextStyle}>{t("tutorial_2.incorrect")}</h1>
+            }
         </>
     )
 }
