@@ -56,7 +56,7 @@
         "subTitle_1": "1.1 TL;DR",
         "subTitle_2": "1.3 Block Header",
         "subTitle_3": "1.2 Block Body",
-        "paragraph_1_1": "Blockchain can usually be divided by the header part and other body parts. For the elements in the header, one example is that the Previous Block Hash in the header, it plays the key role to chain the data block into a blockchain.",
+        "paragraph_1_1": "A single block in a blockchain can usually be divided by the header part and other body parts. For the elements in the header, one example is that the Previous Block Hash in the header, it plays the key role to chain the data block into a blockchain.",
         "paragraph_2_1": "Here is a single block with different elements, could you try to identify the correct elements in the header?",
         "paragraph_2_2": "Details of the block header elements usually:",
         "paragraph_2_3": "(1) Difficulty",
