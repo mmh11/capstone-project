@@ -102,6 +102,24 @@ export default function Tut_2() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_5_1")}
                 </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_6")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_6_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_7")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_7_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_8")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_2_8_1")}
+                </h3>
             </motion.div>
         </>
     )
