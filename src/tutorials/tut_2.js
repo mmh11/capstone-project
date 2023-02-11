@@ -14,10 +14,6 @@ export default function Tut_2() {
     const subTitleText = {
         color: "white",
     };
-    const paragraphText = {
-        color: "#cccccc",
-        marginBottom: "5VH"
-    };
     const paperStyle = {
         backgroundColor: "#262626",
         marginBottom: "5VH",
@@ -90,36 +86,42 @@ export default function Tut_2() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_3_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_4")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_4_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_5")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_5_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_6")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_6_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_7")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_7_1")}
                 </h3>
+                <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_8")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_2_8_1")}
                 </h3>
+                <br/>
             </motion.div>
         </>
     )

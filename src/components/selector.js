@@ -135,63 +135,6 @@ export default function Selector() {
                                 </Button>
                             </TableCell>
                         </TableRow>
-                        <TableRow>
-                            <TableCell style={tableCellStyle}>
-                                <Button 
-                                    sx={(currentTutorial!==5) 
-                                        ? muiButtonSX
-                                        : currentMuiButtonSX} 
-                                    style={muiButtonStyle}
-                                    onClick={() => dispatch(setTutorial(5))} // Tutorial 5
-                                    disableRipple
-                                    >
-                                    <h4 style={(currentTutorial===5)
-                                        ? currenth4Style
-                                        : h4Style}
-                                        >
-                                        {t("tutorial_5.title")}
-                                    </h4>
-                                </Button>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell style={tableCellStyle}>
-                                <Button 
-                                    sx={(currentTutorial!==6) 
-                                        ? muiButtonSX
-                                        : currentMuiButtonSX} 
-                                    style={muiButtonStyle}
-                                    onClick={() => dispatch(setTutorial(6))} // Tutorial 6
-                                    disableRipple
-                                >
-                                    <h4 style={(currentTutorial===6)
-                                        ? currenth4Style
-                                        : h4Style}
-                                        >
-                                        {t("tutorial_6.title")}
-                                    </h4>
-                                </Button>
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell style={tableCellStyle}>
-                                <Button 
-                                    sx={(currentTutorial!==7) 
-                                        ? muiButtonSX
-                                        : currentMuiButtonSX}
-                                    style={muiButtonStyle}
-                                    onClick={() => dispatch(setTutorial(7))} // Tutorial 7
-                                    disableRipple
-                                >
-                                    <h4 style={(currentTutorial===7)
-                                        ? currenth4Style
-                                        : h4Style}
-                                        >
-                                        {t("tutorial_7.title")}
-                                    </h4>
-                                </Button>
-                            </TableCell>
-                        </TableRow>
                     </TableBody>
                 </Table>
             </TableContainer>

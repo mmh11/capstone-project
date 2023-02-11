@@ -43,8 +43,6 @@ export default function Tut_1() {
         marginLeft: "50px",
     }
     const [textField_1, setTextField_1] = useState('')
-    //Bitcoin and Cryptocurrency Technologies : A Comprehensive Introduction
-    //Introduction to Blockchain Gupta, Amit.  Chemical Engineering Progress; New York Vol. 116, Iss. 9,  (Sep 2020): 37-44.
     return (
         <>
             <motion.div

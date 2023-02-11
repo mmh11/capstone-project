@@ -53,9 +53,9 @@
         "header_6": "Previous Block Hash",
         "correct": "Correct!",
         "incorrect": "Incorrect",
-        "subTitle_1": "1.1 TL;DR",
-        "subTitle_2": "1.3 Block Header",
-        "subTitle_3": "1.2 Block Body",
+        "subTitle_1": "2.1 TL;DR",
+        "subTitle_2": "2.3 Block Header",
+        "subTitle_3": "2.2 Block Body",
         "paragraph_1_1": "A single block in a blockchain can usually be divided by the header part and other body parts. For the elements in the header, one example is that the Previous Block Hash in the header, it plays the key role to chain the data block into a blockchain.",
         "paragraph_2_1": "Here is a single block with different elements, could you try to identify the correct elements in the header?",
         "paragraph_2_2": "Details of the block header elements usually:",
@@ -66,7 +66,7 @@
         "paragraph_2_5": "(3) Nonce",
         "paragraph_2_5_1": "Number only used once, it is a random number that the miners need to find in order to mine a block using the Proof of Work algorithm, the range of the nonce is between 0 and 4,294,967,296.",
         "paragraph_2_6": "(4) Previous Block Hash",
-        "paragraph_2_6_1": "The SHA-256 hash value of the entire previous block and this is included in every single block. Therefore, changing previous data cannot succeeded as the hash value will dismatch with all subsequent blocks.",
+        "paragraph_2_6_1": "The SHA-256 hash value of the previous block and this is included in every single block. Therefore, changing previous data cannot succeeded as the hash value will dismatch with all subsequent blocks.  Noticed that in Bitcoin, it is the value of the previous block's header hashed value, not the entire block.",
         "paragraph_2_7": "(5) Timestamp",
         "paragraph_2_7_1": "The creation time of the block in second, measured using UNIX epoch.",
         "paragraph_2_8": "(6) Version",
@@ -78,18 +78,27 @@
         "paragraph_3_5": "(3) Transations, all processed transations data in the block."
     },
     "tutorial_3": {
-        "title": "3. Block Generation & Mining"
+        "title": "3. Block Generation & Mining",
+        "subTitle_1": "3.1 TL;DR",
+        "paragraph_1_1": ""
     },
     "tutorial_4": {
-        "title": "4. Blockchain Transation"
+        "title": "4. Blockchain Transation & Merkle Tree"
     },
     "tutorial_5": {
-        "title": "5. Merkle Tree"
+        "title": "5."
     },
     "tutorial_6": {
-        "title": "6. Double Spending Problem"
+        "title": "6."
     },
     "tutorial_7": {
-        "title": "7. 51% Attack Problem"
+        "title": "7."
+    },
+    "about": {
+        "about": "The Hong Kong PolyTechnic University (PolyU) COMP4913 Capstone Project, 2022-2023, Hui Sze Ming.",
+        "title": "Reference Books and Articles for all tutorials content:",
+        "reference_1": "[1] A. Gupta, “Introduction to Blockchain,” Chemical engineering progress, vol. 116, no. 9, pp. 37–44, 2020.",
+        "reference_2": "[2] A. Narayanan, Bitcoin and cryptocurrency technologies : a comprehensive introduction. Princeton, New Jersey: Princeton University Press, 2016.",
+        "reference_3": "[3] D. A. Tran and B. Krishnamachari, “Blockchain in a nutshell,” 2022, doi: 10.48550/arxiv.2205.01091."
     }
 }

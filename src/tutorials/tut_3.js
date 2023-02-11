@@ -11,11 +11,13 @@ export default function Tut_3() {
     };
     const subTitleText = {
         color: "white",
-    }
-    const paragraphText = {
+    };
+    const paragraphTextNoMargin = {
+        textAlign: "justify",
         color: "#cccccc",
-        marginBottom: "5VH"
-    }
+        marginRight: "20%",
+        lineHeight: 2
+    };
     return (
         <>
             <motion.div
@@ -26,6 +28,12 @@ export default function Tut_3() {
                 <h1 style={titleText}>
                     {t("tutorial_3.title")}
                 </h1>
+                <h2 style={subTitleText}>
+                    {t("tutorial_3.subTitle_1")}
+                </h2>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_3.paragraph_1_1")}
+                </h3>
             </motion.div>
         </>
     )

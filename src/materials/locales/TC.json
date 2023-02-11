@@ -57,15 +57,15 @@
         "title": "3. 區塊生成與采掘"
     },
     "tutorial_4": {
-        "title": "4. 區塊鏈交易"
+        "title": "4. 區塊鏈交易與雜湊樹"
     },
     "tutorial_5": {
-        "title": "5. 雜湊樹"
+        "title": "5."
     },
     "tutorial_6": {
-        "title": "6. 雙重支付問題"
+        "title": "6."
     },
     "tutorial_7": {
-        "title": "7. 51%攻擊問題"
+        "title": "7."
     }
 }
