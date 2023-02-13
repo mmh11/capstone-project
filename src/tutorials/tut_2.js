@@ -62,6 +62,9 @@ export default function Tut_2() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_2.paragraph_3_5")}
                 </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_2.paragraph_3_6")}
+                </h3>
                 <br/>
                 <h2 style={subTitleText}>
                     {t("tutorial_2.subTitle_2")}
