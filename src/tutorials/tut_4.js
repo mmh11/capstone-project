@@ -32,20 +32,46 @@ export default function Tut_4() {
                     {t("tutorial_4.subTitle_1")}
                 </h2>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("tutorial_4.paragraph_1_1")}
+                    {t("tutorial_4.paragraph_1")}
                 </h3>
                 <br/>
                 <h2 style={subTitleText}>
                     {t("tutorial_4.subTitle_2")}
                 </h2>
                 <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_4.paragraph_2_1")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("tutorial_4.paragraph_2_1_1")}
+                    {t("tutorial_4.paragraph_2_2")}
                 </h3>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("tutorial_4.paragraph_2_1_2")}
+                    {t("tutorial_4.paragraph_2_3")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2_4")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2_5")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2_5_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2_6")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_2_6_1")}
+                </h3>
+                <br/>
+                <h2 style={subTitleText}>
+                    {t("tutorial_4.subTitle_3")}
+                </h2>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.paragraph_3")}
                 </h3>
                 <br/>
                 <h3 style={paragraphTextNoMargin}>
