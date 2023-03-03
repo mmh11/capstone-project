@@ -54,11 +54,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(135%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(135%, 0%)"
+                    }}>
                     {t("tutorial_2.header_1")}
                 </h3>
             </motion.div>
@@ -81,11 +87,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(80%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(220%, 0%)"
+                    }}>
                     {t("tutorial_2.header_2")}
                 </h3>
             </motion.div>
@@ -107,11 +119,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(110%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(220%, 0%)"
+                    }}>
                     {t("tutorial_2.header_3")}
                 </h3>
             </motion.div>
@@ -133,11 +151,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(20%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(85%, 0%)"
+                    }}>
                     {t("tutorial_2.header_4")}
                 </h3>
             </motion.div>
@@ -159,11 +183,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(60%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(85%, 0%)"
+                    }}>
                     {t("tutorial_2.header_5")}
                 </h3>
             </motion.div>
@@ -185,11 +215,17 @@ export default function DragStructure() {
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
-                <h3 style={{
+                <h3 style={
+                    i18n.language === "EN" 
+                    ? {
                     textAlign: "center",
                     position: "absolute",
                     transform: "translate(10%, 0%)"
-                }}>
+                    } : {
+                    textAlign: "center",
+                    position: "absolute",
+                    transform: "translate(85%, 0%)"
+                    }}>
                     {t("tutorial_2.header_6")}
                 </h3>
             </motion.div>
