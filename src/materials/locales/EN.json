@@ -90,7 +90,15 @@
         "paragraph_3_3": "You may found out that in order to satisfy the difficulty target, it requires lots of times and attempts, and the result is only rely on your pure luck."
     },
     "tutorial_4": {
-        "title": "4. Blockchain Transation & Merkle Tree"
+        "title": "4. Blockchain Transaction & Merkle Tree",
+        "subTitle_1": "4.1 TL;DR",
+        "subTitle_2": "4.2 Transactions",
+        "subTitle_3": "4.3 Merkle Tree",
+        "paragraph_1_1": "Blockchain transactions does not required any third party organization or application and the data will be permanently inscribed in the corresponding block. Users will be using their public key and private key as the 'address' and 'password' in the blockchain system. For the trasactions data, it will be hashed, encrypted and digital signed before putting into the transaction pool, and waiting for the miners to put it in a new block.",
+        "paragraph_2_1": "Transaction in a blockchain system may based on different model. Transaction models in different blockchain:",
+        "paragraph_2_1_1": "(1) UTXO Model (Unspent Transaction Output), used by the Bitcoin.",
+        "paragraph_2_1_2": "(2) Account/Balance Model, used by the Ethereum.",
+        "paragraph_3_1": "In this chapter, UTXO Model will be used as the example for explain the transaction mechanism in blockchain."
     },
     "tutorial_5": {
         "title": "5."
