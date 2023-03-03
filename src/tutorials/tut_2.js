@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import Paper from '@mui/material/Paper';
 import DragStructure from "../components/dragStructure.js"
-import PaperBackground from "../materials/images/PaperBackground.png"
+import PaperBackgroundEN from "../materials/images/PaperBackgroundEN.png"
+import PaperBackgroundTC from "../materials/images/PaperBackgroundTC.png"
 
 export default function Tut_2() {
     const { t, i18n } = useTranslation();
@@ -22,8 +23,14 @@ export default function Tut_2() {
         width: "1000px",
         height: "500px"
     };
-    const paperDivStyle = {
-        backgroundImage: `url(${PaperBackground})`,
+    const paperDivStyle = i18n.language === "EN" 
+    ? {
+        backgroundImage: `url(${PaperBackgroundEN})`,
+        height: "502px",
+        width: "1002px",
+    }
+    : {
+        backgroundImage: `url(${PaperBackgroundTC})`,
         height: "502px",
         width: "1002px",
     }
