@@ -31,7 +31,7 @@ export default function DragStructure() {
     const [Y_6, setY_6] = useState(1200)
     const [checkCorrect, setCheckCorrect] = useState(false)
     const checkY = (yValue_1, yValue_2, yValue_3, yValue_4, yValue_5, yValue_6)=> {
-        setCheckCorrect(yValue_1<350 && yValue_2<350 && yValue_3<350 && yValue_4<350 && yValue_5<350 && yValue_6<350)
+        setCheckCorrect(yValue_1<1160 && yValue_2<1160 && yValue_3<1160 && yValue_4<1160 && yValue_5<1160 && yValue_6<1160)
     }
     return (
         <>
@@ -49,7 +49,8 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_1(Math.round(e.y))
+                    console.log(e.pageY)
+                    setY_1(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
@@ -75,7 +76,8 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_2(Math.round(e.y))
+                    console.log(e.pageY)
+                    setY_2(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
@@ -101,7 +103,7 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_3(Math.round(e.y))
+                    setY_3(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
@@ -127,7 +129,7 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_4(Math.round(e.y))
+                    setY_4(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
@@ -153,7 +155,7 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_5(Math.round(e.y))
+                    setY_5(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >
@@ -179,7 +181,7 @@ export default function DragStructure() {
                 dragMomentum={false}
                 whileTap={{ cursor: "grabbing" }}
                 onDrag={(e) => {
-                    setY_6(Math.round(e.y))
+                    setY_6(Math.round(e.pageY))
                     checkY(Y_1,Y_2,Y_3,Y_4,Y_5,Y_6)
                 }}
             >

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import Paper from '@mui/material/Paper';
 import CustomTextField from '../components/customTextField';
-import Hash from '../components/crytoFunctions';
+import { Hash } from '../components/crytoFunctions';
 
 export default function Tut_1() {
     const { t, i18n } = useTranslation();

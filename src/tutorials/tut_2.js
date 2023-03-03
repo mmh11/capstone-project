@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import Paper from '@mui/material/Paper';
 import DragStructure from "../components/dragStructure.js"
+import PaperBackground from "../materials/images/PaperBackground.png"
 
 export default function Tut_2() {
     const { t, i18n } = useTranslation();
@@ -21,6 +22,11 @@ export default function Tut_2() {
         width: "1000px",
         height: "500px"
     };
+    const paperDivStyle = {
+        backgroundImage: `url(${PaperBackground})`,
+        height: "502px",
+        width: "1002px",
+    }
     const paragraphTextNoMargin = {
         textAlign: "justify",
         color: "#cccccc",
@@ -78,7 +84,9 @@ export default function Tut_2() {
                 <br/>
                 <div>
                     <Paper style={paperStyle} elevation={24} square={false}>
-                        <DragStructure/>
+                        <div style={paperDivStyle}>
+                            <DragStructure/>
+                        </div>
                     </Paper>
                 </div>
                 <br/>

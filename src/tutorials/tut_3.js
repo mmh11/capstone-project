@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
+import { Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+import { powSimulate } from '../components/crytoFunctions';
 
 export default function Tut_3() {
     const { t, i18n } = useTranslation();
@@ -18,6 +20,7 @@ export default function Tut_3() {
         marginRight: "20%",
         lineHeight: 2
     };
+    const [diff, setDiff] = useState(1)
     return (
         <>
             <motion.div
@@ -52,7 +55,20 @@ export default function Tut_3() {
                     {t("tutorial_3.paragraph_3_2")}
                 </h3>
                 <br/>
-                <></>
+                <FormControl fullWidth>
+                <InputLabel>{t("tutorial_2.header_2")}</InputLabel>
+                    <Select
+                        value={diff}
+                        label="difficulty"
+                        onChange={(e)=>setDiff(e.target.value)}
+                    >
+                        <MenuItem value={1}>1</MenuItem>
+                        <MenuItem value={2}>2</MenuItem>
+                        <MenuItem value={3}>3</MenuItem>
+                        <MenuItem value={4}>4</MenuItem>
+                    </Select>
+                </FormControl>
+                <Button onClick={console.log(powSimulate(diff,false))}>adw</Button>
                 <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_3.paragraph_3_3")}
