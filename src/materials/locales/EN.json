@@ -9,7 +9,8 @@
         "quiz": "Quiz",
         "start": "Start",
         "tutorial": "Tutorial List.",
-        "textFieldLabel": "Input here..."
+        "textFieldLabel": "Input here...",
+        "run": "Run"
     },
     "home": {
         "intro_1": "Learn the blockchain basics in",

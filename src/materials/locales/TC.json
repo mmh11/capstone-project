@@ -9,7 +9,8 @@
         "quiz": "測驗",
         "start": "開始",
         "tutorial": "教程列表",
-        "textFieldLabel": "在這裡輸入..."
+        "textFieldLabel": "在這裡輸入...",
+        "run": "執行"
     },
     "home": {
         "intro_1": "在這裡認識區塊鏈基礎",

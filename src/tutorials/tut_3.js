@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
-import { Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
-import { powSimulate } from '../components/crytoFunctions';
+import { Button, Select, MenuItem, FormControl, InputLabel, Switch } from '@mui/material';
+import { randomHex } from '../components/crytoFunctions';
+import CustomSelect from '../components/customSelect';
 
 export default function Tut_3() {
     const { t, i18n } = useTranslation();
@@ -21,6 +22,17 @@ export default function Tut_3() {
         lineHeight: 2
     };
     const [diff, setDiff] = useState(1)
+    const [randomResult, setRandomResult] = useState("")
+    const powSimulate = () => {
+        while(true){
+            const result = randomHex()
+            const matchedHead = "0".repeat(diff)
+            setRandomResult(result)
+            if(result.slice(0,diff) === matchedHead){
+                return
+            }
+        }
+    }
     return (
         <>
             <motion.div
@@ -55,22 +67,26 @@ export default function Tut_3() {
                     {t("tutorial_3.paragraph_3_2")}
                 </h3>
                 <br/>
+                <Button 
+                    variant="contained"
+                    color="secondary"
+                    onClick={() => {
+                        powSimulate()
+                    }}>
+                    {t("labels.run")}
+                </Button>
                 <FormControl fullWidth>
-                <InputLabel>{t("tutorial_2.header_2")}</InputLabel>
-                    <Select
+                    <InputLabel>{t("tutorial_2.header_2")}</InputLabel>
+                    <CustomSelect
                         value={diff}
-                        label="difficulty"
-                        onChange={(e)=>setDiff(e.target.value)}
-                    >
-                        <MenuItem value={1}>1</MenuItem>
-                        <MenuItem value={2}>2</MenuItem>
-                        <MenuItem value={3}>3</MenuItem>
-                        <MenuItem value={4}>4</MenuItem>
-                    </Select>
+                        onChange={(e)=>{
+                            setDiff(e.target.value)
+                        }}
+                    />
                 </FormControl>
-                <Button onClick={console.log(powSimulate(diff,false))}>adw</Button>
                 <br/>
                 <h3 style={paragraphTextNoMargin}>
+                    {(randomResult)}
                     {t("tutorial_3.paragraph_3_3")}
                 </h3>
             </motion.div>

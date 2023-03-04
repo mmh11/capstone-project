@@ -5,15 +5,17 @@ export function Hash(value){
     return(SHA256(value).toString())
 }
 
-export function powSimulate(diffculty, flag){
-    const matchedHead = "0".repeat(diffculty)
-    var resultString = ""
-    while (flag){
-        const randomBytes = require('randombytes')
-        resultString = randomBytes(64).toString('hex');
-        if (resultString.slice(0,diffculty) === matchedHead){
-            return
-        }
-    }
+export function randomHex(){
+    const randomBytes = require('randombytes')
+    const resultString = randomBytes(64).toString('hex');
+    // const matchedHead = "0".repeat(diffculty)
+    // var resultString = ""
+    // while (flag){
+    //     const randomBytes = require('randombytes')
+    //     resultString = randomBytes(64).toString('hex');
+    //     if (resultString.slice(0,diffculty) === matchedHead){
+    //         return
+    //     }
+    // }
     return(resultString)
 }
