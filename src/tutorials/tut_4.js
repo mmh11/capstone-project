@@ -5,6 +5,7 @@ import trans1EN from "../materials/images/trans1EN.png"
 import trans1TC from "../materials/images/trans1TC.png"
 import trans2EN from "../materials/images/trans2EN.png"
 import trans2TC from "../materials/images/trans2TC.png"
+import merkleTree from "../materials/images/merkleTree.png"
 import CustomTextField from '../components/customTextField';
 
 export default function Tut_4() {
@@ -26,6 +27,12 @@ export default function Tut_4() {
     const flexDivStyle = {
         display: "flex",
         color: "#cccccc"
+    }
+    const merkleTreeDivStyle = {
+        backgroundImage: `url(${merkleTree})`,
+        display: "inline-flex",
+        height: "230px",
+        width: "920px",
     }
     const trans1DivStyle = i18n.language === "EN" 
     ? {
@@ -288,6 +295,10 @@ export default function Tut_4() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_4.paragraph_3_1")}
                 </h3>
+                <div style={merkleTreeDivStyle}>
+
+                </div>
+                <br/><br/><br/><br/><br/><br/>
             </motion.div>
         </>
     )
