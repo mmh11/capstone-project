@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './Redux/store'
 import "./i18n";
+import AutoScroll from "./autoScroll.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -14,6 +15,7 @@ root.render(
     <React.StrictMode>
         <Provider store={store}>
             <BrowserRouter>
+                <AutoScroll />
                 <App />
             </BrowserRouter>
         </Provider>
