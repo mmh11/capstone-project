@@ -76,9 +76,9 @@
         "paragraph_3_2": "(1) Block ID, the hash value of the block header.",
         "paragraph_3_3": "(2) Index, the height of the block.",
         "paragraph_3_4": "(3) Block Size, the size of the block in bytes.",
-        "paragraph_3_5": "(4) Block Header, it included several elements which will be mentioned below.",
-        "paragraph_3_6": "(5) Transation Counter, the total amount of the transations in the block.",
-        "paragraph_3_7": "(6) Transations, all processed transations data in the block."
+        "paragraph_3_5": "Besides of these body elements, a block also contain a block Header, it included several elements which will be mentioned below.",
+        "paragraph_3_6": "(4) Transation Counter, the total amount of the transations in the block.",
+        "paragraph_3_7": "(5) Transations, all processed transations data in the block."
     },
     "tutorial_3": {
         "title": "3. Block Generation & Mining",
@@ -117,7 +117,13 @@
         "trans1Assume_2": "And you owe Bob $ ",
         "trans1Assume_3": "And you have another UTXO balance with $ ",
         "dollars": " dollars.",
-        "valid1": "Error! The UTXO balance is not enough!"
+        "valid1": "Error! The UTXO balance is not enough!",
+        "example": "Here is some examples of the transaction data could be used to test:",
+        "example_1": "(1) Input: #1 someone(20) Output: #6 Alice(20) Signed by someone",
+        "example_2": "(2) Input: #2 Bob(10) Output: #7 Alice(5) #10 Alex(5) Signed by Bob",
+        "example_3": "(3) Input: #3 Alex(100) Output: #8 someone(100) Signed by someone",
+        "example_4": "(4) Input: #4 Alice(20) #5 Alice(30) Output: #9 Alice(50) Signed by Alice",
+        "H": "Notice that the 'H' here means Hashing, and the 'R' here means the merkle root!" 
     },
     "tutorial_5": {
         "title": "5."

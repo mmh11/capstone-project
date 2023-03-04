@@ -134,7 +134,7 @@ export default function Tut_4() {
     const merkleRootStyle = {
         position: "absolute",
         marginTop: "0px",
-        marginLeft: "252px",
+        marginLeft: "230px",
     }
     const h6Style = {
         color: "#cccccc"
@@ -345,6 +345,10 @@ export default function Tut_4() {
                 <h3 style={paragraphTextNoMargin}>
                     {t("tutorial_4.paragraph_3_1")}
                 </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.H")}
+                </h3>
+                <br/><br/><br/>
                 <div style={merkleTreeDivStyle}>
                     <div style={merkleTree1Style}>
                         <CustomTextField
@@ -393,12 +397,28 @@ export default function Tut_4() {
                         </h6>
                     </div>
                     <div style={merkleRootStyle}>
-                        <h6 style={h6RootStyle}>
+                        <h5 style={h6RootStyle}>
                             {merkleRoot}
-                        </h6>
+                        </h5>
                     </div>
                 </div>
-                <br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.example")}
+                </h3>
+                <h4 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.example_1")}
+                </h4>
+                <h4 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.example_2")}
+                </h4>
+                <h4 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.example_3")}
+                </h4>
+                <h4 style={paragraphTextNoMargin}>
+                    {t("tutorial_4.example_4")}
+                </h4>
+                <br/><br/><br/>
             </motion.div>
         </>
     )
