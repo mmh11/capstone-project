@@ -7,7 +7,9 @@ import trans2EN from "../materials/images/trans2EN.png"
 import trans2TC from "../materials/images/trans2TC.png"
 import merkleTree from "../materials/images/merkleTree.png"
 import CustomTextField from '../components/customTextField';
+import { Hash } from '../components/crytoFunctions';
 
+// Remarks: Should be separated into 2 components for the transaction part and merkle tree part in later stage.
 export default function Tut_4() {
     const { t, i18n } = useTranslation();
     const titleText = {
@@ -100,11 +102,59 @@ export default function Tut_4() {
     const validationStyle = {
         color: "red"
     }
+    const merkleTree1Style = {
+        position: "absolute",
+        marginTop: "230px"
+    }
+    const merkleTree2Style = {
+        position: "absolute",
+        marginTop: "230px",
+        marginLeft: "230px",
+    }
+    const merkleTree3Style = {
+        position: "absolute",
+        marginTop: "230px",
+        marginLeft: "490px",
+    }
+    const merkleTree4Style = {
+        position: "absolute",
+        marginTop: "230px",
+        marginLeft: "720px",
+    }
+    const merkleTree5Style = {
+        position: "absolute",
+        marginTop: "105px",
+        marginLeft: "16px",
+    }
+    const merkleTree6Style = {
+        position: "absolute",
+        marginTop: "105px",
+        marginLeft: "490px",
+    }
+    const merkleRootStyle = {
+        position: "absolute",
+        marginTop: "0px",
+        marginLeft: "252px",
+    }
+    const h6Style = {
+        color: "#cccccc"
+    }
+    const h6RootStyle = {
+        color: "#b135ff"
+    }
     const [trans1Text1, setTrans1Text1] = useState(0)
     const [trans1Text2, setTrans1Text2] = useState(0)
     const [trans2Text1, setTrans2Text1] = useState(0)
     const [trans2Text2, setTrans2Text2] = useState(0)
     const [valid, setValid] = useState(true)
+
+    const [merkleTree1, setMerkleTree1] = useState("")
+    const [merkleTree2, setMerkleTree2] = useState("")
+    const [merkleTree3, setMerkleTree3] = useState("")
+    const [merkleTree4, setMerkleTree4] = useState("")
+    const [merkleTree5, setMerkleTree5] = useState("")
+    const [merkleTree6, setMerkleTree6] = useState("")
+    const [merkleRoot, setMerkleRoot] = useState("")
     return (
         <>
             <motion.div
@@ -296,7 +346,57 @@ export default function Tut_4() {
                     {t("tutorial_4.paragraph_3_1")}
                 </h3>
                 <div style={merkleTreeDivStyle}>
-
+                    <div style={merkleTree1Style}>
+                        <CustomTextField
+                            onChange={(e)=> {
+                                setMerkleTree1(e)
+                                setMerkleTree5(Hash(merkleTree1+merkleTree2))
+                                setMerkleRoot(Hash(merkleTree5+merkleTree6))
+                            }}
+                        />
+                    </div>
+                    <div style={merkleTree2Style}>
+                        <CustomTextField
+                            onChange={(e)=> {
+                                setMerkleTree2(e)
+                                setMerkleTree5(Hash(merkleTree1+merkleTree2))
+                                setMerkleRoot(Hash(merkleTree5+merkleTree6))
+                            }}
+                        />
+                    </div>
+                    <div style={merkleTree3Style}>
+                        <CustomTextField
+                            onChange={(e)=> {
+                                setMerkleTree3(e)
+                                setMerkleTree6(Hash(merkleTree3+merkleTree4))
+                                setMerkleRoot(Hash(merkleTree5+merkleTree6))
+                            }}
+                        />
+                    </div>
+                    <div style={merkleTree4Style}>
+                        <CustomTextField
+                            onChange={(e)=> {
+                                setMerkleTree4(e)
+                                setMerkleTree6(Hash(merkleTree3+merkleTree4))
+                                setMerkleRoot(Hash(merkleTree5+merkleTree6))
+                            }}
+                        />
+                    </div>
+                    <div style={merkleTree5Style}>
+                        <h6 style={h6Style}>
+                            {merkleTree5}
+                        </h6>
+                    </div>
+                    <div style={merkleTree6Style}>
+                        <h6 style={h6Style}>
+                            {merkleTree6}
+                        </h6>
+                    </div>
+                    <div style={merkleRootStyle}>
+                        <h6 style={h6RootStyle}>
+                            {merkleRoot}
+                        </h6>
+                    </div>
                 </div>
                 <br/><br/><br/><br/><br/><br/>
             </motion.div>
