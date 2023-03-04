@@ -112,7 +112,12 @@
         "paragraph_2_6": "(2) Consolidate Transaction",
         "paragraph_2_6_1": "In consolidate transaction, users can consolidate their UTXO transactions by combining their excisting UTXO transactions as they may have different UTXO transactions. Let's try how the consolidate transaction works in the below and assuming you are Alice who own lots of UTXO transactions.",
         "paragraph_3": "Transactions data is stored in the block as a Merkle Tree pattern. Each node (except for the leaf nodes) stores the hash of their corresponding children, and the root of the Merkle Tree is called Merkle root. By using the merkle tree, user can minimize the required storage for transaction data, the merkle root (and other blockheader components) is sufficient to verify the new block, it is not necessary to use more storage to pull and storge the whole data block.",
-        "paragraph_3_1": "Here shows how to generate the Merkle Tree and the Root for the transaction data."
+        "paragraph_3_1": "Here shows how to generate the Merkle Tree and the Root for the transaction data.",
+        "trans1Assume_1": "Lets assume you have an UTXO balance with $ ",
+        "trans1Assume_2": "And you owe Bob $ ",
+        "trans1Assume_3": "And you have another UTXO balance with $ ",
+        "dollars": " dollars.",
+        "valid1": "Error! The UTXO balance is not enough!"
     },
     "tutorial_5": {
         "title": "5."
