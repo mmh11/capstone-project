@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { Button, Select, MenuItem, FormControl, InputLabel, Switch } from '@mui/material';
-import { randomHex } from '../components/crytoFunctions';
+import { Hash, RandomHex } from '../components/crytoFunctions';
 import CustomSelect from '../components/customSelect';
+import { maxHeight } from '@mui/system';
 
 export default function Tut_3() {
     const { t, i18n } = useTranslation();
@@ -21,11 +22,15 @@ export default function Tut_3() {
         marginRight: "20%",
         lineHeight: 2
     };
+    const divStyle = {
+        display: "flex",
+        alignItems: "center"
+    }
     const [diff, setDiff] = useState(1)
     const [randomResult, setRandomResult] = useState("")
     const powSimulate = () => {
         while(true){
-            const result = randomHex()
+            const result = Hash(RandomHex())
             const matchedHead = "0".repeat(diff)
             setRandomResult(result)
             if(result.slice(0,diff) === matchedHead){
@@ -67,23 +72,27 @@ export default function Tut_3() {
                     {t("tutorial_3.paragraph_3_2")}
                 </h3>
                 <br/>
-                <Button 
-                    variant="contained"
-                    color="secondary"
-                    onClick={() => {
-                        powSimulate()
-                    }}>
-                    {t("labels.run")}
-                </Button>
-                <FormControl fullWidth>
-                    <InputLabel>{t("tutorial_2.header_2")}</InputLabel>
-                    <CustomSelect
-                        value={diff}
-                        onChange={(e)=>{
-                            setDiff(e.target.value)
-                        }}
-                    />
-                </FormControl>
+                <div style={divStyle}>
+                    <FormControl 
+                        sx={{ m: 1, minWidth: 120 }}
+                        >
+                        <CustomSelect
+                            value={diff}
+                            onChange={(e)=>{
+                                setDiff(e.target.value)
+                            }}
+                        />
+                    </FormControl>
+                    <Button 
+                        variant="contained"
+                        color="secondary"
+                        style={{maxHeight:"40px"}}
+                        onClick={() => {
+                            powSimulate()
+                        }}>
+                        {t("labels.run")}
+                    </Button>
+                </div>
                 <br/>
                 <h3 style={paragraphTextNoMargin}>
                     {(randomResult)}
