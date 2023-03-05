@@ -29,8 +29,12 @@ export default function Cards() {
 		display:"flex",
 		justifyContent:"center"
 	}
-	const muiButtonStyle = {
-		color: "#b135ff"
+	const muiButton1Style = {
+		color: "#b135ff",
+	}
+	const muiButton2Style = {
+		color: "#b135ff",
+		marginTop: "20px"
 	}
 	const muiButtonSX = {
         "&:hover": {backgroundColor: "transparent",textDecoration: "underline" }
@@ -54,7 +58,7 @@ export default function Cards() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButton2Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>
@@ -77,7 +81,7 @@ export default function Cards() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button component={Link} to="/advanced" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+				<Button component={Link} to="/advanced" size="small" sx={muiButtonSX} style={muiButton1Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>
@@ -100,7 +104,7 @@ export default function Cards() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButtonStyle}>
+				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButton2Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>

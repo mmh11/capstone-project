@@ -125,20 +125,14 @@
         "example_4": "(4) Input: #4 Alice(20) #5 Alice(30) Output: #9 Alice(50) Signed by Alice",
         "H": "Notice that the 'H' here means Hashing, and the 'R' here means the merkle root!" 
     },
-    "tutorial_5": {
-        "title": "5."
-    },
-    "tutorial_6": {
-        "title": "6."
-    },
-    "tutorial_7": {
-        "title": "7."
-    },
     "about": {
         "about": "The Hong Kong PolyTechnic University (PolyU) COMP4913 Capstone Project, 2022-2023, Hui Sze Ming.",
         "title": "Reference Books and Articles for all tutorials content:",
         "reference_1": "[1] A. Gupta, “Introduction to Blockchain,” Chemical engineering progress, vol. 116, no. 9, pp. 37–44, 2020.",
         "reference_2": "[2] A. Narayanan, Bitcoin and cryptocurrency technologies : a comprehensive introduction. Princeton, New Jersey: Princeton University Press, 2016.",
         "reference_3": "[3] D. A. Tran and B. Krishnamachari, “Blockchain in a nutshell,” 2022, doi: 10.48550/arxiv.2205.01091."
+    },
+    "beginner": {
+        "title": "Blockchain Introduction to Beginner."
     }
 }
