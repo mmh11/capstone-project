@@ -23,15 +23,15 @@ export default function DragStructure() {
         color: "red",
         textAlign: "center"
     }
-    const [Y_1, setY_1] = useState(0)
-    const [Y_2, setY_2] = useState(300)
-    const [Y_3, setY_3] = useState(600)
-    const [Y_4, setY_4] = useState(900)
-    const [Y_5, setY_5] = useState(1200)
-    const [Y_6, setY_6] = useState(1200)
+    const [Y_1, setY_1] = useState(1140)
+    const [Y_2, setY_2] = useState(1190)
+    const [Y_3, setY_3] = useState(1240)
+    const [Y_4, setY_4] = useState(1290)
+    const [Y_5, setY_5] = useState(1340)
+    const [Y_6, setY_6] = useState(1390)
     const [checkCorrect, setCheckCorrect] = useState(false)
     const checkY = (yValue_1, yValue_2, yValue_3, yValue_4, yValue_5, yValue_6)=> {
-        setCheckCorrect(yValue_1<1160 && yValue_2<1160 && yValue_3<1160 && yValue_4<1160 && yValue_5<1160 && yValue_6<1160)
+        setCheckCorrect(yValue_1<1225 && yValue_2<1225 && yValue_3<1225 && yValue_4<1225 && yValue_5<1225 && yValue_6<1225)
     }
     return (
         <>
