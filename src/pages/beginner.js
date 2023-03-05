@@ -34,6 +34,18 @@ export default function Beginner(){
                 <h1 style={titleText}>
                     {t("beginner.title")}
                 </h1>
+                <h2 style={subTitleText}>
+                    {t("beginner.subTitle_1")}
+                </h2>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_1")}
+                </h3>
+                <h2 style={subTitleText}>
+                    {t("beginner.subTitle_2")}
+                </h2>
+                <h2 style={subTitleText}>
+                    {t("beginner.subTitle_3")}
+                </h2>
             </motion.div>
         </>
     )

@@ -133,6 +133,10 @@
         "reference_3": "[3] D. A. Tran and B. Krishnamachari, “Blockchain in a nutshell,” 2022, doi: 10.48550/arxiv.2205.01091."
     },
     "beginner": {
-        "title": "Blockchain Introduction to Beginner."
+        "title": "Blockchain Introduction to Beginner.",
+        "subTitle_1": "What is a block?",
+        "subTitle_2": "How to chain the blocks?",
+        "subTitle_3": "Where can Blockchain be used?",
+        "paragraph_1": ""
     }
 }
