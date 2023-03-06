@@ -138,5 +138,17 @@
         "subTitle_2": "How to chain the blocks?",
         "subTitle_3": "Where can Blockchain be used?",
         "paragraph_1": ""
+    },
+    "quiz": {
+        "q1": "Q1. Which of the following element does not included in the block header?",
+        "q1_c1": "Nonce",
+        "q1_c2": "Difficulty",
+        "q1_c3": "Transation Counter",
+        "q1_c4": "Timestamp",
+        "q2": "Q2. Which of the following about Hash is TRUE?",
+        "q2_c1": "The length of the hash function output is depended on the input value.",
+        "q2_c2": "It is easy for hash function to generate the same output with different input value.",
+        "q2_c3": "Hashed value can be decrypted into the original value.",
+        "q2_c4": "One of the hash function is SHA256."
     }
 }

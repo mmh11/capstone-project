@@ -104,7 +104,7 @@ export default function Cards() {
 				</Typography>
 			</CardContent>
 			<CardActions>
-				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButton2Style}>
+				<Button component={Link} to="/quiz" size="small" sx={muiButtonSX} style={muiButton2Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>

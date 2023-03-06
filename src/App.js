@@ -2,6 +2,7 @@ import About from './pages/about';
 import Home from './pages/home';
 import Beginner from './pages/beginner';
 import Advanced from './pages/advanced';
+import Quiz from './pages/quiz'
 import Navbar from './components/navbar';
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/about" element={<About/>}/>
                         <Route path="/beginner" element={<Beginner/>}/>
                         <Route path="/advanced" element={<Advanced/>}/>
+                        <Route path="/quiz" element={<Quiz/>}/>
                     </Routes>
             </ThemeProvider>
         </>
