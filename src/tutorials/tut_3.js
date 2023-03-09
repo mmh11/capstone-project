@@ -52,7 +52,7 @@ export default function Tut_3() {
             const result = Hash(RandomHex())
             const matchedHead = "0".repeat(diff)
             setRandomResult(result)
-            await sleep(0.001)
+            await sleep(1)
             if(result.slice(0,diff) === matchedHead){
                 setRunning(false)
                 var endTime = performance.now()
@@ -118,14 +118,18 @@ export default function Tut_3() {
                                 />
                             </FormControl>
                             {!running
-                                ?<Button 
-                                    variant="contained"
-                                    color="secondary"
-                                    style={{maxHeight:"40px"}}
-                                    onClick={powSimulate}>
-                                    {t("labels.run")}
-                                </Button>
-                                :<CircularProgress color="secondary" />
+                                ?
+                                    <Button 
+                                        variant="contained"
+                                        color="secondary"
+                                        style={{maxHeight:"40px"}}
+                                        onClick={powSimulate}>
+                                        {t("labels.run")}
+                                    </Button>
+                                :
+                                    <CircularProgress 
+                                        color="secondary" 
+                                        style={{marginLeft:"10px"}}/>
                             }
                         </div>
                         <h3 style={paragraphTextNoHeight}>
