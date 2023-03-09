@@ -144,6 +144,7 @@
         "restart": "Restart the Quiz!",
         "finalScore": "Your final score is : ",
         "checkAllAns": "Check the Answers",
+        "resturnHome": "Return Home",
         "q1": "Q1. Which of the following statement about blockchain is TRUE?",
         "q1_c1": "A",
         "q1_c2": "TRUE",

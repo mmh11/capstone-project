@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { QuestionsControl } from '../components/questionsControl.js'
 import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom';
 
 export default function Test(){
     const { t, i18n } = useTranslation();
@@ -110,10 +111,21 @@ export default function Test(){
                 </div>
                 :<div>
                     <div style={centerDivStyle}>
-                        <h2>
+                        <br/><br/><br/>
+                        <h1 style={subTitleText}>
                             {t("quiz.finalScore")+score}
-                        </h2>
+                        </h1>
+                        <br/><br/><br/>
                         <div style={rowDiv}>
+                            <Button
+                                color="secondary" 
+                                variant="contained"
+                                style={nextButtonStyle}
+                                onClick={restartQuiz}
+                                component={Link} 
+                                to="/">
+                                <h4>{t("quiz.resturnHome")}</h4>
+                            </Button>
                             <Button
                                 color="secondary" 
                                 variant="contained"
@@ -131,7 +143,6 @@ export default function Test(){
                         </div>
                     </div>
                 </div>}
-            
         </motion.div>
     )
 }
