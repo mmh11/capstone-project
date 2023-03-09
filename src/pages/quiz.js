@@ -5,6 +5,7 @@ import { QuestionsControl } from '../components/questionsControl.js'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom';
 import CustomDialog from '../components/customDialog.js';
+import FeedbackAni from '../components/feedbackAni.js'
 
 export default function Test(){
     const { t, i18n } = useTranslation();
@@ -114,10 +115,10 @@ export default function Test(){
                 </div>
                 :<div>
                     <div style={centerDivStyle}>
-                        <br/><br/><br/>
                         <h1 style={subTitleText}>
                             {t("quiz.finalScore")+score}
                         </h1>
+                        <FeedbackAni/>
                         <br/><br/><br/>
                         <div style={rowDiv}>
                             <Button
