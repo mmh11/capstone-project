@@ -118,7 +118,7 @@ export default function Test(){
                         <h1 style={subTitleText}>
                             {t("quiz.finalScore")+score}
                         </h1>
-                        <FeedbackAni/>
+                        <FeedbackAni score={score}/>
                         <br/><br/><br/>
                         <div style={rowDiv}>
                             <Button
