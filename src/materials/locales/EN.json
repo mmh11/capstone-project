@@ -173,10 +173,10 @@
         "q5_c2": "Each transaction can contain multiple inputs and outputs.",
         "q5_c3": "Each transaction can contain multiple inputs and one output.",
         "q5_c4": "Each transaction can contain one input and multiple outputs.",
-        "q6": "Q6. ?",
-        "q6_c1": "A",
-        "q6_c2": "B",
-        "q6_c3": "C",
-        "q6_c4": "True"
+        "q6": "Q6. Which of the following statement about blockchain merkle root/tree is FALSE?",
+        "q6_c1": "Having the ability for transaction data verification.",
+        "q6_c2": "A Merkle Root is a hashed value.",
+        "q6_c3": "Using Merkle Root required lesser disk stroage.",
+        "q6_c4": "One of the purposes of using Merkle Root is to ensure the consensus algorithm satisfied the difficulty target."
     }
 }
