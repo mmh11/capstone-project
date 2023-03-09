@@ -1,9 +1,10 @@
-import React, {useState, useContext} from 'react'
+import React, {useState} from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { QuestionsControl } from '../components/questionsControl.js'
 import Button from '@mui/material/Button';
 import {Link} from 'react-router-dom';
+import CustomDialog from '../components/customDialog.js';
 
 export default function Test(){
     const { t, i18n } = useTranslation();
@@ -32,6 +33,9 @@ export default function Test(){
     const centerDivStyle = {
         textAlign: "-webkit-center"
     }
+    const endDivStyle = {
+        textAlign: "end"
+    }
     const [currentQ, setCurrentQ] = useState(0)
     const [currentA, setCurrentA] = useState("")
     const [score, setScore] = useState(0)
@@ -59,11 +63,10 @@ export default function Test(){
                 {currentQ < 6
                 ?<div>
                     <h2 style={subTitleText}>
-                        {t(QuestionsControl[currentQ].question)}
+                        {t(QuestionsControl[currentQ].question)+"\u3000"+"["+(currentQ+1)+"/6]"}
                     </h2>
-                    <h1>{score}</h1>
                     <div style={centerDivStyle}>
-                        <br/>
+                        <br/><br/>
                         <div style={rowDiv}>
                             <Button 
                                 color="secondary" 
@@ -98,7 +101,7 @@ export default function Test(){
                             </Button>
                         </div>
                         <br/><br/><br/>
-                        <div>
+                        <div style={endDivStyle}>
                             <Button
                                 color="secondary" 
                                 variant="contained"
@@ -133,13 +136,7 @@ export default function Test(){
                                 onClick={restartQuiz}>
                                 <h4>{t("quiz.restart")}</h4>
                             </Button>
-                            <Button
-                                color="secondary" 
-                                variant="contained"
-                                style={nextButtonStyle}
-                                onClick={restartQuiz}>
-                                <h4>{t("quiz.checkAllAns")}</h4>
-                            </Button>
+                            <CustomDialog/>
                         </div>
                     </div>
                 </div>}

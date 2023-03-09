@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import { Button, Paper, FormControl } from '@mui/material';
 import { Hash, RandomHex } from '../components/crytoFunctions';
 import CustomSelect from '../components/customSelect';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function Tut_3() {
     const { t, i18n } = useTranslation();
@@ -42,17 +43,21 @@ export default function Tut_3() {
     const [diff, setDiff] = useState(1)
     const [randomResult, setRandomResult] = useState("")
     const [tookTime, setTookTime] = useState(0)
-
-    const powSimulate = () => {
+    const [running, setRunning] = useState(false)
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    const powSimulate = async() => {
         var startTime = performance.now()
+        setRunning(true)
         while(true){
             const result = Hash(RandomHex())
             const matchedHead = "0".repeat(diff)
             setRandomResult(result)
+            await sleep(0.001)
             if(result.slice(0,diff) === matchedHead){
+                setRunning(false)
                 var endTime = performance.now()
                 setTookTime((endTime - startTime).toFixed(1))
-                return
+                break
             }
         }
     }
@@ -105,21 +110,23 @@ export default function Tut_3() {
                                 sx={{ m: 1, minWidth: 120 }}
                                 >
                                 <CustomSelect
+                                    disabled = {running}
                                     value={diff}
                                     onChange={(e)=>{
                                         setDiff(e.target.value)
                                     }}
                                 />
                             </FormControl>
-                            <Button 
-                                variant="contained"
-                                color="secondary"
-                                style={{maxHeight:"40px"}}
-                                onClick={() => {
-                                    powSimulate()
-                                }}>
-                                {t("labels.run")}
-                            </Button>
+                            {!running
+                                ?<Button 
+                                    variant="contained"
+                                    color="secondary"
+                                    style={{maxHeight:"40px"}}
+                                    onClick={powSimulate}>
+                                    {t("labels.run")}
+                                </Button>
+                                :<CircularProgress color="secondary" />
+                            }
                         </div>
                         <h3 style={paragraphTextNoHeight}>
                             {t("tutorial_3.time")+tookTime+t("tutorial_3.millisecond")}

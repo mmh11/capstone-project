@@ -91,7 +91,7 @@
         "paragraph_3_2": "Therefore, Proof-of-Work is a basic consensus algorithm which will keep generating random hashing values until satisfaction. Let's see how the difficulty would affect the Proof-of-Work simulation below!",
         "paragraph_3_3": "You may found out that in order to satisfy the higher difficulty target, it requires more times in average, and the result is only rely on your pure luck.",
         "select": "Select the difficulty and check for the result: ",
-        "notice": "(Notice that the process time may took more than 20 seconds, and you are suggested to try multiple times for a single difficulty!)",
+        "notice": "(Notice that the process time may took more than 1 minute, and you are suggested to try multiple times for a single difficulty!)",
         "result": "Result Value: ",
         "time": "Time used: ",
         "millisecond": " milliseconds"
@@ -145,6 +145,9 @@
         "finalScore": "Your final score is : ",
         "checkAllAns": "Check the Answers",
         "resturnHome": "Return Home",
+        "dialogTitle": "Quiz Answers",
+        "ans": "Ans: ",
+        "dialogClose": "Close",
         "q1": "Q1. Which of the following statement about blockchain is TRUE?",
         "q1_c1": "A",
         "q1_c2": "TRUE",
