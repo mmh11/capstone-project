@@ -44,6 +44,9 @@ class Navbar extends Component {
                     <Button component={Link} to="/" sx={muiButtonSX} disableRipple style={textButtonStyle}>
                         <h3>{t("labels.home")}</h3>
                     </Button>
+                    <Button component={Link} to="/beginner" sx={muiButtonSX} disableRipple style={textButtonStyle}>
+                        <h3>{t("labels.beginner")}</h3>
+                    </Button>
                     <Button component={Link} to="/advanced" sx={muiButtonSX} disableRipple style={textButtonStyle}>
                         <h3>{t("labels.advanced")}</h3>
                     </Button>
