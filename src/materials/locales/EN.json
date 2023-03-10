@@ -19,7 +19,7 @@
         "intro_4": "Select tutorial",
         "description_1": "Introducing the blockchain.",
         "description_2": "Learning rationale behind of the blockchain technology with typical Bitcoin-like blockchain example.",
-        "description_3": "Challenge yourself with a short quiz."
+        "description_3": "Challenge yourself with a short quiz. You will have 30 seconds for answering each question!"
     },
     "tutorial_1": { 
         "title": "1. Hash Value & Function",
