@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 
 export default function Beginner(){
     const { t, i18n } = useTranslation();
@@ -21,6 +22,9 @@ export default function Beginner(){
         marginLeft: "200px",
         marginRight: "200px",
         marginTop: "50px"
+    }
+    const iconStyle = {
+        color: "#cccccc"
     }
     return (
         <>
