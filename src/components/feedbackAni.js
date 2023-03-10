@@ -25,9 +25,9 @@ export default function FeedbackAni(props){
                             d: [
                                 "M 130,100 Q 100,100 70,100",
                                 "M 130,100 Q 100,130 70,100",
+                                "M 130,150 Q 100,180 70,150",
                                 "M 130,100 Q 100,130 70,100",
-                                "M 130,100 Q 100,130 70,100",
-                                "M 130,100 Q 100,130 70,100",
+                                "M 130,150 Q 100,180 70,150",
                                 "M 130,100 Q 100,100 70,100",
                             ],
                         }}
@@ -50,10 +50,10 @@ export default function FeedbackAni(props){
                             // M(left head position horizontal),... Q(middle position horizontal),... (right head position horizontal),...
                             d: [
                                 "M 60,40 Q 60,40 60,40",
-                                "M 60,40 Q 60,40 60,40",
-                                "M 60,40 Q 60,40 60,40",
-                                "M 60,40 Q 60,40 60,40",
-                                "M 60,40 Q 60,40 60,40",
+                                "M 40,60 Q 60,40 80,60",
+                                "M 40,100 Q 60,80 80,100",
+                                "M 40,60 Q 60,40 80,60",
+                                "M 40,100 Q 60,80 80,100",
                                 "M 60,40 Q 60,40 60,40",
                             ],
                         }}
@@ -76,10 +76,10 @@ export default function FeedbackAni(props){
                             // M(left head position horizontal),... Q(middle position horizontal),... (right head position horizontal),...
                             d: [
                                 "M 140,40 Q 140,40 140,40",
-                                "M 140,40 Q 140,40 140,40",
-                                "M 140,40 Q 140,40 140,40",
-                                "M 140,40 Q 140,40 140,40",
-                                "M 140,40 Q 140,40 140,40",
+                                "M 120,60 Q 140,40 160,60",
+                                "M 120,100 Q 140,80 160,100",
+                                "M 120,60 Q 140,40 160,60",
+                                "M 120,100 Q 140,80 160,100",
                                 "M 140,40 Q 140,40 140,40",
                             ],
                         }}
