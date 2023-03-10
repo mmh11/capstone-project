@@ -62,6 +62,44 @@ export default function Beginner(){
                 <h2 style={subTitleText}>
                     {t("beginner.subTitle_3")}
                 </h2>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_1_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_2")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_2_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_3")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_3_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_4")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_4_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_5")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_5_1")}
+                </h3>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_5_2")}
+                </h3>
+                <br/>
             </motion.div>
         </>
     )
