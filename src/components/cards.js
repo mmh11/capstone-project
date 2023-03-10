@@ -32,10 +32,6 @@ export default function Cards() {
 	const muiButton1Style = {
 		color: "#b135ff",
 	}
-	const muiButton2Style = {
-		color: "#b135ff",
-		marginTop: "20px"
-	}
 	const muiButtonSX = {
         "&:hover": {backgroundColor: "transparent",textDecoration: "underline" }
     };
@@ -47,18 +43,19 @@ export default function Cards() {
 			image={ImageBeginner}
 			/>
 			<CardContent>
-				<Typography gutterBottom>
-					<h2>{t("labels.beginner")}</h2>
-				</Typography>
-				<Typography variant="body2" color="text.secondary">
-					<br/>
-					{t("home.description_1")}
-					<br/>
-					<br/>
-				</Typography>
+				<div style={{height:"170px"}}>
+					<Typography gutterBottom>
+						<h2>{t("labels.beginner")}</h2>
+					</Typography>
+					<Typography variant="body2" color="text.secondary">
+						<br/>
+						{t("home.description_1")}
+						<br/>
+					</Typography>
+				</div>
 			</CardContent>
-			<CardActions>
-				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButton2Style}>
+			<CardActions style={{height:"60px"}}>
+				<Button component={Link} to="/beginner" size="small" sx={muiButtonSX} style={muiButton1Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>
@@ -70,17 +67,19 @@ export default function Cards() {
 			image={ImageAdvance}
 			/>
 			<CardContent>
-				<Typography gutterBottom>
-					<h2>{t("labels.advanced")}</h2>
-				</Typography>
-				<Typography variant="body2" color="text.secondary">
-					<br/>
-					{t("home.description_2")}
-					<br/>
-					{i18n.language === "TC" && <br/>}
-				</Typography>
+				<div style={{height:"170px"}}>
+					<Typography gutterBottom>
+						<h2>{t("labels.advanced")}</h2>
+					</Typography>
+					<Typography variant="body2" color="text.secondary">
+						<br/>
+						{t("home.description_2")}
+						<br/>
+						{i18n.language === "TC" && <br/>}
+					</Typography>
+				</div>
 			</CardContent>
-			<CardActions>
+			<CardActions style={{height:"60px"}}>
 				<Button component={Link} to="/advanced" size="small" sx={muiButtonSX} style={muiButton1Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
@@ -93,18 +92,19 @@ export default function Cards() {
 			image={ImageTest}
 			/>
 			<CardContent>
-				<Typography gutterBottom>
-					<h2>{t("labels.quiz")}</h2>
-				</Typography>
-				<Typography variant="body2" color="text.secondary">
-					<br/>
-					{t("home.description_3")}
-					<br/>
-					<br/>
-				</Typography>
+				<div style={{height:"170px"}}>
+					<Typography gutterBottom>
+						<h2>{t("labels.quiz")}</h2>
+					</Typography>
+					<Typography variant="body2" color="text.secondary">
+						<br/>
+						{t("home.description_3")}
+						<br/>
+					</Typography>
+				</div>
 			</CardContent>
-			<CardActions>
-				<Button component={Link} to="/quiz" size="small" sx={muiButtonSX} style={muiButton2Style}>
+			<CardActions style={{height:"60px"}}>
+				<Button component={Link} to="/quiz" size="small" sx={muiButtonSX} style={muiButton1Style}>
 					<h3>{t("labels.start")}</h3>
 				</Button>
 			</CardActions>
