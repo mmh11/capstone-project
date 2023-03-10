@@ -15,7 +15,6 @@ export default function Beginner(){
     const paragraphTextNoMargin = {
         textAlign: "justify",
         color: "#cccccc",
-        marginRight: "20%",
         lineHeight: 2
     };
     const motionDivStyle = {
@@ -38,11 +37,28 @@ export default function Beginner(){
                     {t("beginner.subTitle_1")}
                 </h2>
                 <h3 style={paragraphTextNoMargin}>
-                    {t("beginner.paragraph_1")}
+                    {t("beginner.paragraph_1_1")}
                 </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_1_2")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_1_3")}
+                </h3>
+                <br/>
                 <h2 style={subTitleText}>
                     {t("beginner.subTitle_2")}
                 </h2>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_2_1")}
+                </h3>
+                <br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_2_2")}
+                </h3>
+                <br/>
                 <h2 style={subTitleText}>
                     {t("beginner.subTitle_3")}
                 </h2>

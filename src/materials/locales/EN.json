@@ -134,10 +134,14 @@
     },
     "beginner": {
         "title": "Blockchain Introduction to Beginner.",
-        "subTitle_1": "What is a block?",
-        "subTitle_2": "How to chain the blocks?",
+        "subTitle_1": "What is the 'Block' and 'Chain' of Blockchain?",
+        "subTitle_2": "How does Blockchain works?",
         "subTitle_3": "Where can Blockchain be used?",
-        "paragraph_1": ""
+        "paragraph_1_1": "In a blockchain system there will be many blocks and each of them is the data. In other words, we pack several data into the same block. For example, a block in the cryptocurrency blockchain system stored transaction data, it is just like a kind of data storage method.",
+        "paragraph_1_2": "Beside of the data, a block also contain the a hash value of current block data and a hash value of previous block data, which play the key role to chain each single data block. A hash value is generate by hash function, it is like an unique ID of the corresponding input data, any changes of the inpuit data will result in a very different hash value.",
+        "paragraph_1_3": "If someone tries to tamper the data in block X, it will change the 'current hash' value of the block X, and dismatch with the 'previous hash' value of the block Y which should be storing the original hash value of block X, so it can be detected easily. Therefore, each block data can be secure by chaining with other blocks by storing blocks' hash value and the applied encryption algorithm, it is extremly hard to delete or modify any data in blockchain.",
+        "paragraph_2_1": "After knowing how the data are stored in the blockchain system securely, now lets talk about how can a blockchain system works normally. A blockchain system requires neither third party company/organization nor central authority. Instead, every node(individual) has a copy of all data blocks.",
+        "paragraph_2_2": "For example, let's assume city A is using a blockchain system to store the healthcare data from 100 clinics and 10 hospitals, all nodes(all 100 clinics and 10 hospitals) need to keep a copy of the whole blockchain, starting from the first block to the lastest block, and synchronize the blockchain once there are any new blocks with new healthcare data."
     },
     "quiz": {
         "next": "Next Question",
