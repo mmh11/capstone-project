@@ -12,15 +12,15 @@ import FactCheckIcon from '@mui/icons-material/FactCheck';
 export function Currency(){
     const iconStyle = {
         color: "#cccccc",
-        width: "50%",
-        height: "50%",
-        padding: "50px 0"
+        width: "150px",
+        height: "150px",
+        padding: "50px 50px"
     }
     return(
         <motion.svg
             style={iconStyle}
             animate={{
-                scale: [1, 2, 2, 2, 1],
+                scale: [1, 1.5, 1.5, 1.5, 1],
                 rotate: [0, 0, 180, 360, 360]
             }}
             transition={{
@@ -39,8 +39,8 @@ export function Currency(){
 export function Agri(){
     const iconStyle = {
         color: "#cccccc",
-        width: "70%",
-        height: "70%",
+        width: "200px",
+        height: "200px",
         padding: "50px 0"
     }
     return(
@@ -65,17 +65,17 @@ export function Agri(){
 export function IoT(){
     const iconStyle = {
         color: "#cccccc",
-        width: "70%",
-        height: "70%",
-        padding: "50px 0"
+        width: "200px",
+        height: "200px",
+        padding: "50px 50px",
+        position:"absolute"
     }
     return(
-        <>
+        <div style={{display:"flex"}}>
             <motion.svg
                 style={iconStyle}
                 animate={{
-                    scale: [1, 0, 0, 1],
-                    x: [125, 125, 125, 125],
+                    scale: [1, 0, 0, 1]
                 }}
                 transition={{
                     duration: 4,
@@ -90,8 +90,7 @@ export function IoT(){
             <motion.svg
                 style={iconStyle}
                 animate={{
-                    scale: [0, 1, 1, 0],
-                    x: [-125, -125, -125 , -125]
+                    scale: [0, 1, 1, 0]
                 }}
                 transition={{
                     duration: 4,
@@ -103,24 +102,25 @@ export function IoT(){
             >
                 <DevicesIcon/>
             </motion.svg>
-        </>
+        </div>
     )
 }
 
 export function Healthcare(){
     const iconStyle = {
         color: "#cccccc",
-        width: "70%",
-        height: "70%",
-        padding: "50px 0"
+        width: "200px",
+        height: "200px",
+        padding: "50px 50px",
+        position:"absolute"
     }
     return(
-        <>
+        <div style={{display:"flex"}}>
             <motion.svg
                 style={iconStyle}
                 animate={{
                     scale: [1, 0, 0, 0, 1],
-                    x: [125, 125, 125, 125],
+                    //x: [125, 125, 125, 125],
                     rotateX: [180, 0, 0, 180],
                 }}
                 transition={{
@@ -135,7 +135,7 @@ export function Healthcare(){
                 style={iconStyle}
                 animate={{
                     scale: [0, 1, 1, 1, 0],
-                    x: [-125, -125, -125 , -125],
+                    //x: [-125, -125, -125 , -125],
                     rotateX: [270, 0, 0, 270]
                 }}
                 transition={{
@@ -146,30 +146,31 @@ export function Healthcare(){
             >
                 <ManageSearchIcon/>
             </motion.svg>
-        </>
+        </div>
     )
 }
 
 export function Other(){
     const iconStyle = {
         color: "#cccccc",
-        width: "70%",
-        height: "70%",
-        padding: "50px 0"
+        width: "300px",
+        height: "300px",
+        padding: "50px 50px",
+        position:"absolute"
     }
     const iconStyle2 = {
         color: "#b135ff",
-        width: "70%",
-        height: "70%",
-        padding: "50px 0"
+        width: "300px",
+        height: "300px",
+        padding: "130px 125px 50px 50px",
+        position:"absolute"
     }
     return(
-        <>
+        <div style={{display:"flex"}}>
             <motion.svg
                 style={iconStyle}
                 animate={{
                     scale: [1, 1, 1, 1],
-                    x: [90, 90, 90, 90],
                     rotate: [0, -15, 10, -5, 0]
                 }}
                 transition={{
@@ -184,8 +185,7 @@ export function Other(){
                 style={iconStyle2}
                 animate={{
                     scale: [0.2, 0.5, 0.5, 0.2],
-                    x: [-130, -40, -40 , -130],
-                    y: [40, 40, 40 , 40]
+                    x: [0, 40, 40 , 0]
                 }}
                 transition={{
                     duration: 3,
@@ -195,6 +195,6 @@ export function Other(){
             >
                 <FactCheckIcon/>
             </motion.svg>
-        </>
+        </div>
     )
 }
