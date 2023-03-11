@@ -67,7 +67,7 @@ export function IoT(){
         color: "#cccccc",
         width: "200px",
         height: "200px",
-        padding: "50px 50px",
+        padding: "50px 100px",
         position:"absolute"
     }
     return(
