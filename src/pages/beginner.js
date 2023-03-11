@@ -182,6 +182,10 @@ export default function Beginner(){
                     <BeginnerMap/>
                 </div>
                 <br/><br/><br/>
+                <h3 style={paragraphTextNoMargin}>
+                    {t("beginner.paragraph_3_5_4")}
+                </h3>
+                <br/><br/><br/>
             </motion.div>
         </>
     )

@@ -20,12 +20,12 @@ export default function BeginnerMap(){
     };
     const muiButtonSX = {
         "&:hover": { 
-            backgroundColor: "#9e2828"
+            backgroundColor: "#ffe675"
         },
-        backgroundColor: "#a14242",
-        border: "3px #9e2828 solid",
+        backgroundColor: "#fff8db",
+        border: "3px #ffe675 solid",
         borderRadius: "0px",
-        color:"#cccccc",
+        color:"#333333",
         position: "absolute",
         fontWeight: "bold"
     };
