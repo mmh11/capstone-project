@@ -19,6 +19,7 @@
     "crypto-js": "^4.1.1",
     "flubber": "^0.4.2",
     "framer-motion": "^8.0.2",
+    "moment": "^2.29.4",
     "randombytes": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

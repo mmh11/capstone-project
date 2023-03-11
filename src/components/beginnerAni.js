@@ -157,6 +157,12 @@ export function Other(){
         height: "70%",
         padding: "50px 0"
     }
+    const iconStyle2 = {
+        color: "#b135ff",
+        width: "70%",
+        height: "70%",
+        padding: "50px 0"
+    }
     return(
         <>
             <motion.svg
@@ -164,7 +170,7 @@ export function Other(){
                 animate={{
                     scale: [1, 1, 1, 1],
                     x: [90, 90, 90, 90],
-                    rotate: [0, 10, -10, 10, 0]
+                    rotate: [0, -15, 10, -5, 0]
                 }}
                 transition={{
                     duration: 3,
@@ -175,11 +181,11 @@ export function Other(){
                 <FireExtinguisherIcon/>
             </motion.svg>
             <motion.svg
-                style={iconStyle}
+                style={iconStyle2}
                 animate={{
                     scale: [0.2, 0.5, 0.5, 0.2],
-                    x: [-90, -70, -70 , -90],
-                    y: [60, 40, 40 , 60]
+                    x: [-130, -40, -40 , -130],
+                    y: [40, 40, 40 , 40]
                 }}
                 transition={{
                     duration: 3,

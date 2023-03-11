@@ -12,7 +12,7 @@ export default function Beginner(){
         marginTop: "5VH",
     };
     const subTitleText = {
-        color: "white",
+        color: "#b135ff",
     };
     const paragraphTextNoMargin = {
         textAlign: "justify",

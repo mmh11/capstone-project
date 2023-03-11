@@ -160,7 +160,12 @@
         "map_b4": "Building D",
         "map_b5": "Building E",
         "map_b6": "Building F",
-        "map_b7": "Building G"
+        "map_b7": "Building G",
+        "checked": "has been checked!",
+        "date": " Date: ",
+        "blockHash": "(Hash) ",
+        "blockPrevHash": "(Previous Hash) ",
+        "blockData": "(Block Data) "
     },
     "quiz": {
         "next": "Next Question",
