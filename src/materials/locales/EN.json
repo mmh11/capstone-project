@@ -152,7 +152,15 @@
         "paragraph_3_4_1": "Blockchain can also be applied into the healthcare System. As patient's pricate data is important to be secured, blockchain can store the healthcare data without the concerns of tampering. Meanwhile, using blockchain in healthcare system allows different dotors from different medical facilities to access patient's health history, which can help to increase the safeness and effectiveness of the medical procedure.",
         "paragraph_3_5": "(5) Other System that required integrity and decentralization",
         "paragraph_3_5_1": "Fire Protection Equipments Maintenance Record System. To ensure the community safety, it may be a good idea to develop a system, which allowing the public to access fire protection equipments maintenance records of different buildings in the city.",
-        "paragraph_3_5_2": "Electrical and Mechanical Devices Maintenance Record System. Similarly, it may also be a good idea to develop a system, which allowing the public to access the maintenance record of the lifts in different buildings."
+        "paragraph_3_5_2": "Electrical and Mechanical Devices Maintenance Record System. Similarly, it may also be a good idea to develop a system, which allowing the public to access the maintenance record of the lifts in different buildings.",
+        "paragraph_3_5_3": "The following map component simulate the Fire Protection Equipments Maintenance Record System. let's assume you are working for the fire department and your job is to click the building which has been checked.",
+        "map_b1": "Building A",
+        "map_b2": "Building B",
+        "map_b3": "Building C",
+        "map_b4": "Building D",
+        "map_b5": "Building E",
+        "map_b6": "Building F",
+        "map_b7": "Building G"
     },
     "quiz": {
         "next": "Next Question",

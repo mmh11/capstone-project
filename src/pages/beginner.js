@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 import {Currency, Agri, IoT, Healthcare, Other} from '../components/beginnerAni.js'
+import BeginnerMap from '../components/beginnerMap.js'
 
 export default function Beginner(){
     const { t, i18n } = useTranslation();
@@ -43,6 +44,10 @@ export default function Beginner(){
     const childSVGDivStyle = {
         width: "30%",
         textAlign: "center"
+    }
+    const mapStyle = {
+        display: "flex",
+        justifyContent: "space-evenly",
     }
     return (
         <>
@@ -169,6 +174,10 @@ export default function Beginner(){
                     </div>
                 </div>
 
+                <br/><br/><br/>
+                <div style={mapStyle}>
+                    <BeginnerMap/>
+                </div>
                 <br/><br/><br/>
             </motion.div>
         </>
