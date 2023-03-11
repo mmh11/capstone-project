@@ -136,7 +136,7 @@ export function Healthcare(){
                 animate={{
                     scale: [0, 1, 1, 1, 0],
                     x: [-125, -125, -125 , -125],
-                    rotateX: [180, 0, 0, 180]
+                    rotateX: [270, 0, 0, 270]
                 }}
                 transition={{
                     duration: 3,

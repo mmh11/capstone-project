@@ -90,9 +90,9 @@ export default function Beginner(){
                 </h2>
                 <div style={parentDivStyle}>
                     <div style={childTextDivStyle}>
-                        <h3 style={paragraphTextNoMargin}>
+                        <h2 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_1")}
-                        </h3>
+                        </h2>
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_1_1")}
                         </h3>
@@ -109,9 +109,9 @@ export default function Beginner(){
                         <Agri/>
                     </div>
                     <div style={childTextDivStyle}>
-                        <h3 style={paragraphTextNoMargin}>
+                        <h2 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_2")}
-                        </h3>
+                        </h2>
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_2_1")}
                         </h3>
@@ -122,9 +122,9 @@ export default function Beginner(){
 
                 <div style={parentDivStyle}>
                     <div style={childTextDivStyle}>
-                        <h3 style={paragraphTextNoMargin}>
+                        <h2 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_3")}
-                        </h3>
+                        </h2>
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_3_1")}
                         </h3>
@@ -141,9 +141,9 @@ export default function Beginner(){
                         <Healthcare/>
                     </div>
                     <div style={childTextDivStyle}>
-                        <h3 style={paragraphTextNoMargin}>
+                        <h2 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_4")}
-                        </h3>
+                        </h2>
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_4_1")}
                         </h3>
@@ -154,9 +154,9 @@ export default function Beginner(){
 
                 <div style={parentDivStyle}>
                     <div style={childTextDivStyle}>
-                        <h3 style={paragraphTextNoMargin}>
+                        <h2 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_5")}
-                        </h3>
+                        </h2>
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_5_1")}
                         </h3>
