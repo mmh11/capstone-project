@@ -1,16 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
-import AgricultureIcon from '@mui/icons-material/Agriculture';
-import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-import LanIcon from '@mui/icons-material/Lan';
-import DevicesIcon from '@mui/icons-material/Devices';
-import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
-import ManageSearchIcon from '@mui/icons-material/ManageSearch';
-import FireExtinguisherIcon from '@mui/icons-material/FireExtinguisher';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
+import {Currency, Agri, IoT, Healthcare, Other} from '../components/beginnerAni.js'
 
 export default function Beginner(){
     const { t, i18n } = useTranslation();
@@ -43,6 +34,11 @@ export default function Beginner(){
     }
     const childTextDivStyle = {
         width: "70%"
+    }
+    const childSVGDivStyle2 = {
+        width: "30%",
+        textAlign: "center",
+        display: "flex",
     }
     const childSVGDivStyle = {
         width: "30%",
@@ -102,7 +98,7 @@ export default function Beginner(){
                         </h3>
                     </div>
                     <div style={childSVGDivStyle}>
-                        <CurrencyBitcoinIcon style={iconStyle}/>
+                        <Currency/>
                     </div>
                 </div>
 
@@ -110,7 +106,7 @@ export default function Beginner(){
 
                 <div style={parentDivStyle}>
                     <div style={childSVGDivStyle}>
-                        <AgricultureIcon style={iconStyle}/>
+                        <Agri/>
                     </div>
                     <div style={childTextDivStyle}>
                         <h3 style={paragraphTextNoMargin}>
@@ -133,16 +129,16 @@ export default function Beginner(){
                             {t("beginner.paragraph_3_3_1")}
                         </h3>
                     </div>
-                    <div style={childSVGDivStyle}>
-                        <LanIcon style={iconStyle}/>
+                    <div style={childSVGDivStyle2}>
+                        <IoT/>
                     </div>
                 </div>
                 
                 <br/><br/><br/>
 
                 <div style={parentDivStyle}>
-                    <div style={childSVGDivStyle}>
-                        <LocalHospitalIcon style={iconStyle}/>
+                    <div style={childSVGDivStyle2}>
+                        <Healthcare/>
                     </div>
                     <div style={childTextDivStyle}>
                         <h3 style={paragraphTextNoMargin}>
@@ -168,8 +164,8 @@ export default function Beginner(){
                             {t("beginner.paragraph_3_5_2")}
                         </h3>
                     </div>
-                    <div style={childSVGDivStyle}>
-                        <FireExtinguisherIcon style={iconStyle}/>
+                    <div style={childSVGDivStyle2}>
+                        <Other/>
                     </div>
                 </div>
 
