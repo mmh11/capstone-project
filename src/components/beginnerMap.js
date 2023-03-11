@@ -71,6 +71,7 @@ export default function BeginnerMap(){
     const recordDivStyle={
         marginLeft: "40px",
         marginRight: "40px",
+        color: "#cccccc"
     }
     const recordList = ["a","b","c"]
     return(

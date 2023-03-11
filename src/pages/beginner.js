@@ -168,6 +168,9 @@ export default function Beginner(){
                         <h3 style={paragraphTextNoMargin}>
                             {t("beginner.paragraph_3_5_2")}
                         </h3>
+                        <h3 style={paragraphTextNoMargin}>
+                            {t("beginner.paragraph_3_5_3")}
+                        </h3>
                     </div>
                     <div style={childSVGDivStyle2}>
                         <Other/>
