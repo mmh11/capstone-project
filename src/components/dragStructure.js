@@ -31,7 +31,7 @@ export default function DragStructure() {
     const [Y_6, setY_6] = useState(1390)
     const [checkCorrect, setCheckCorrect] = useState(false)
     const checkY = (yValue_1, yValue_2, yValue_3, yValue_4, yValue_5, yValue_6)=> {
-        setCheckCorrect(yValue_1<1225 && yValue_2<1225 && yValue_3<1225 && yValue_4<1225 && yValue_5<1225 && yValue_6<1225)
+        setCheckCorrect(yValue_1<1180 && yValue_2<1180 && yValue_3<1180 && yValue_4<1180 && yValue_5<1180 && yValue_6<1180)
     }
     return (
         <>
